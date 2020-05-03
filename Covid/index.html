@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Covid19 Landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col xl2 l2 m3 s5">
+                    <div class="logo">
+                        <a href="#!"><img src="img/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col xl10 l10 10 m9 s7">
+                    <div class="mainmenu">
+                        <ul>
+                            <li><a class="active" href="#overview">Overview</a></li>
+                            <li><a class="" href="#contagion">Contagion</a></li>
+                            <li><a class="" href="#symptoms">Symptoms</a></li>
+                            <li><a class="" href="#prevention">Prevention</a></li>
+                            <li><a class="" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobilemenu">
+                        <span onclick="openNav()">&#9776;</span>
+                        <div id="mySidenav" class="sidemenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <ul>
+                                <li><a class="active" href="#!">Overview</a></li>
+	                            <li><a class="" href="#!">Contagion</a></li>
+                                <li><a href="#!">Symptoms</a></li>
+                                <li><a href="#!">Prevention</a></li>
+                                <li><a href="#!">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+    	<div class="container">
+    		<div class="banner-description">
+    			<div class="banner-content">
+    				<span class="semi-title">
+    					COVID-19 Alert
+    				</span>
+    				<h2 class="subheading">
+    					Stay at Home quarantine to stop corona virus
+    				</h2>
+    				<p>
+    					There is no specific medicine to prevent or treat the Corona virus. People may need supportive care
+    				</p>
+    				<a href="#!" class="filbtn">Let us Help</a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="description">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col xl6 l6 m6 s12">
+    				<div class="desc-img">
+    					<img src="img/desc.png">
+    				</div>
+    			</div>
+    			<div class="col xl6 l6 m6 s12">
+    				<div class="fdescription">
+	    				<div class="desc-content">
+	    					<span class="semi-title">
+		    					What is COVID-19 ??
+		    				</span>
+		    				<h2 class="subheading">
+		    					Coronavirus
+		    				</h2>
+		    				<p>
+		    					Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory illness now called COVID-19.Lauren Sauer, M.S., the director of operations with the Johns Hopkins Office of Critical Event Preparedness and Response
+		    				</p>
+		    				<a href="#!" class="nfilbtn">Learn More</a>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+	function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
