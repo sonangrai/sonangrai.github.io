@@ -1,3 +1,9 @@
+@media screen and (max-width: 1162px){
+	.mainmenu ul li a {
+	    font-size: 0.8rem;
+	}	
+}
+
 /*for laptop*/
 @media screen and (max-width: 1025px){
 	.mid-container {
@@ -5,9 +11,6 @@
 	}
 	.logo img {
 	    width: 100%;
-	}
-	.mainmenu ul li a {
-	    font-size: 0.8rem;
 	}
 	.banner-box {
 	    padding: 4rem 0;
@@ -41,14 +44,20 @@
 	}
 }
 
-/*tablet device*/
-@media screen and (max-width: 769px){
+@media screen and (max-width: 980px){
 	.mainmenu{
 		display: none;
 	}
 	.mobilemenu{
 		display: flex;
 	    justify-content: flex-end;
+	}
+}
+
+/*tablet device*/
+@media screen and (max-width: 769px){
+	.logo img {
+	    width: 60%;
 	}
 	.wb-content {
 	    width: 100%;

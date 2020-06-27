@@ -1,9 +1,9 @@
 $(document).ready(function() {
     var bigimage = $("#big");
     var thumbs = $("#thumbs");
-    //var totalslides = 10;
     var syncedSecondary = true;
 
+// testimonail slider with owl
     bigimage
         .owlCarousel({
             items: 1,
@@ -47,10 +47,6 @@ $(document).ready(function() {
         .on("changed.owl.carousel", syncPosition2);
 
     function syncPosition(el) {
-        //if loop is set to false, then you have to uncomment the next line
-        //var current = el.item.index;
-
-        //to disable loop, comment this block
         var count = el.item.count - 1;
         var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
 
@@ -60,7 +56,6 @@ $(document).ready(function() {
         if (current > count) {
             current = 0;
         }
-        //to this
         thumbs
             .find(".owl-item")
             .removeClass("current")
