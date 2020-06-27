@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito+Sans&display=swap');
+
+:root {
+    --primary-color: #488EFF;
+    --secondary-color: #1a73e80d;
+    --primary-font-color: #232323;
+    --blue-color: #488EFF;
+    --nunito-font: 'Nunito Sans', sans-serif;
+    --alegreya-font: 'Alegreya', serif;
+    --underline-color: #1A73E8;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mcontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mid-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*header part*/
+header {
+    padding: 0.6rem 0;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.mobilemenu {
+    display: none;
+}
+
+.mainmenu ul {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+}
+
+.mainmenu ul li {
+    padding: 0.5rem;
+}
+
+.mainmenu ul li a {
+    font-family: var(--nunito-font);
+    color: var(--primary-font-color);
+}
+
+.mainmenu ul li:last-child a {
+    color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.mainmenu ul li:last-child a:hover {
+    background: var(--blue-color);
+    color: #fff;
+}
+
+#mySidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilemenu span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.mob-cont {
+    width: 100%;
+}
+
+a.closebtn {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    text-align: right;
+    padding: 0 3rem;
+}
+
+.mob-cont ul li {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.mob-cont a {
+    color: #fff;
+    font-family: var(--nunito-font);
+    text-transform: uppercase;
+}
+
+
+
+/*Banner part*/
+section.banner {
+    background-image: url("../img/banner.png");
+    background-size: 100%;
+}
+
+.banner-box {
+    padding: 8rem 0;
+}
+
+.banner-box h2 {
+    font-family: var(--alegreya-font);
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.banner-box h5 {
+    font-family: var(--nunito-font);
+    font-style: italic;
+    font-size: 30px;
+    margin: 1rem 0
+}
+
+.banner-box p {
+    font-family: var(--nunito-font);
+    font-size: 21px;
+    width: 60%;
+    margin: 1rem 0;
+}
+
+a.pbtn {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/*featured part*/
+section.featured {
+    padding: 4rem 0;
+}
+
+.title h2 {
+    font-family: var(--alegreya-font);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.title.sm h2 {
+    font-size: 24px;
+}
+
+.feat-item {
+    margin: 2rem 0;
+}
+
+/*expert word part*/
+section.wp-word {
+    padding: 3rem 0;
+}
+
+.title.tl h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.word-box {
+    background: var(--secondary-color);
+    padding: 3rem;
+    position: relative;
+}
+
+.wb-content {
+    width: 56%;
+}
+
+.wb-content h3 {
+    font-family: var(--alegreya-font);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.wb-content p {
+    font-size: 18px;
+    font-family: var(--nunito-font);
+}
+
+a.lbtn {
+    border-bottom: 1.5px solid var(--underline-color);
+    font-family: var(--nunito-font);
+    color: var(--primary-font-color);
+    font-weight: 600;
+}
+
+.expert-box {
+    position: absolute;
+    top: -24%;
+    right: 8%;
+    -webkit-box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 2rem;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: #fff;
+}
+
+/*feature part*/
+section.features {
+    padding: 2rem 0;
+}
+
+h3.subhead {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.flexer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ftimg,
+.ftdesc {
+    margin: 2rem 0;
+}
+
+.ftimg {
+    width: 38%;
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.ftdesc {
+    width: 58%;
+    display: flex;
+    align-items: center;
+}
+
+.ft-cont h4 {
+    font-family: var(--alegreya-font);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ft-cont p {
+    font-size: 18px;
+    font-family: var(--nunito-font);
+    margin: 2rem 0;
+}
+
+/*get started part*/
+section.started {
+    padding: 3rem 0;
+}
+
+.scard {
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background: #2C3964;
+    color: #fff;
+    padding: 3rem;
+}
+
+.scard h2 {
+    font-size: 30px;
+    font-family: var(--alegreya-font);
+    font-weight: 600;
+}
+
+.scard p {
+    font-size: 18px;
+    font-family: var(--nunito-font);
+}
+
+.scard .col-lg-3.col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer part*/
+footer {
+    padding: 3rem 0 1rem;
+}
+
+.fot-item h2,
+.foot-item h2 {
+    font-family: var(--alegreya-font);
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.foot-item h2 {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.fot-item p {
+    font-size: 18px;
+    font-family: var(--nunito-font);
+}
+
+.foot-item a {
+    color: var(--primary-font-color);
+    font-family: var(--nunito-font);
+}
+
+.bottom,
+.social {
+    margin-top: 3rem;
+}
+
+.bottom ul {
+    display: flex;
+}
+
+.bottom ul li {
+    margin-right: 1rem;
+}
+
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li {
+    margin-left: 1rem;
+}
+
+.social ul li a {
+    color: #000;
+}
+
+/*testimonail part*/
+section.testimonials {
+    padding: 3rem 0 4rem;
+}
+
+div#big {
+    margin-bottom: -6%;
+}
+
+#big .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6rem 10rem;
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+.tes-item h3 {
+    font-family: var(--alegreya-font);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tcard {
+    background: #fff;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 2rem;
+}
+
+.tcard strong {
+    font-family: var(--alegreya-font);
+    font-size: 600;
+    display: block;
+}
+
+.tacrd span {
+    font-family: var(--nunito-font);
+    display: block;
+}
+
+.owl-item.current .tcard {
+    -webkit-box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px -9px rgba(0, 0, 0, 0.75);
+}
+
+#thumbs .item {
+    cursor: pointer;
+}
