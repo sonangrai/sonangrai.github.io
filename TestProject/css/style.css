@@ -127,6 +127,7 @@ a.closebtn {
 section.banner {
     background-image: url("../img/banner.png");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .banner-box {
