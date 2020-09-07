@@ -206,6 +206,53 @@ nav .menu .menu-item a {
   font-size: 0.7em;
 }
 
+.feature {
+  background: url(../img/features.png);
+  background-size: 100% 100%;
+  padding: 3em 0 12em;
+}
+
+.feat-items,
+.feat-img {
+  margin: 2em 0;
+}
+
+.feat-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1em;
+}
+
+.feat-items .icon {
+  width: 10%;
+  margin: 0 2%;
+}
+
+.feat-items .f-desc {
+  width: 80%;
+  margin: 0 2%;
+}
+
+.feat-items .f-desc h2 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.feat-items .f-desc p {
+  color: #fff;
+  font-weight: 400;
+}
+
 body,
 html {
   scroll-behavior: smooth;
@@ -231,5 +278,9 @@ img {
 
 .ptb-3 {
   padding: 3em 0;
+}
+
+.wt-txt {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

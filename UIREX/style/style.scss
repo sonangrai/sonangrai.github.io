@@ -3,6 +3,8 @@
 @import "./header";
 @import "./animations";
 @import "./about";
+@import "./features";
+
 body,
 html {
   scroll-behavior: smooth;
@@ -28,4 +30,8 @@ img {
 
 .ptb-3 {
   padding: 3em 0;
+}
+
+.wt-txt {
+  color: #fff;
 }
