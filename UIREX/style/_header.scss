@@ -1,0 +1,108 @@
+header {
+  padding: 3em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  a {
+    @include links;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+nav {
+  height: 100%;
+  .menu {
+    height: 100%;
+    @include unorderlist(none);
+    @include flexer(space-between);
+    .menu-item {
+      a {
+        @include links;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.try {
+  height: 100%;
+  @include flexer(flex-end);
+  a {
+    @include links;
+    color: $primary-color;
+    padding: 0.5em 2em;
+    display: inline-block;
+    background: #fff;
+    @include borderradius;
+  }
+}
+
+.top {
+  height: 100vh;
+  background: url(../img/top.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.blink-ellipse {
+  svg {
+    position: absolute;
+    top: -36%;
+    right: 4%;
+    width: 318px;
+    z-index: 1;
+  }
+}
+
+.mobile-img {
+  img {
+    margin: 0 -76px;
+  }
+}
+
+.banner-description {
+  @include flexer(center);
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.main-text {
+  width: 100%;
+  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: right;
+  }
+  p {
+    text-align: right;
+    color: #fff;
+  }
+}
+
+.stores {
+  width: 100%;
+  @include flexer(flex-end);
+}
+
+.playstore,
+.appstore {
+  @include flexer(center);
+  background: #000;
+  @include borderradius;
+  color: #fff;
+  margin-left: 1em;
+  width: 200px;
+  padding: 1% 4%;
+  box-sizing: border-box;
+  .img-part {
+    width: 20%;
+  }
+  .descprt {
+    width: 70%;
+    margin-left: 10%;
+  }
+}
