@@ -253,6 +253,80 @@ nav .menu .menu-item a {
   font-weight: 400;
 }
 
+section.pricing {
+  padding: 4em 0;
+}
+
+.price-item {
+  margin: 3em 0;
+  border: 2px solid #4085f6;
+  padding: 3em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.price-item h2 {
+  font-size: 1.5em;
+}
+
+.price-item .price {
+  display: block;
+  margin: 1em 0;
+  font-size: 2em;
+  color: #4085f6;
+}
+
+.price-item h3 {
+  font-size: 1em;
+}
+
+.price-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.price-item ul li {
+  font-size: 0.8em;
+}
+
+.price-item ul li .tick .fa-check {
+  color: green;
+}
+
+.price-item ul li .tick .fa-times {
+  color: red;
+}
+
+.price-item a.purchase-btn {
+  border: 2px solid #4085f6;
+  border-radius: 24px;
+  padding: 0.5em 2em;
+  margin: 1em 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, right top, from(#4085f6), to(#59a9e7));
+  background: linear-gradient(to right, #4085f6, #59a9e7);
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 0;
+}
+
+.main a.purchase-btn {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.main .price {
+  color: #fff;
+}
+
 body,
 html {
   scroll-behavior: smooth;
