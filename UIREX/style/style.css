@@ -255,6 +255,7 @@ nav .menu .menu-item a {
 
 section.pricing {
   padding: 4em 0;
+  background: #f8f6f6;
 }
 
 .price-item {
@@ -325,6 +326,54 @@ section.pricing {
 
 .main .price {
   color: #fff;
+}
+
+section.apps {
+  padding: 3em 0;
+}
+
+section.apps .para {
+  margin: 2em auto;
+}
+
+.app-owl {
+  padding: 2em 0 4em;
+}
+
+.app-owl .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.app-owl button:focus {
+  outline: none;
+}
+
+.app-owl .fa {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2em;
+  width: 2em;
+  margin: 0 0.2em;
+  background: #4085f6;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body,
