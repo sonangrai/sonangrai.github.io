@@ -4,5 +4,5 @@ $(".owl-carousel").owlCarousel({
   nav: false,
   dots: false,
   items: 1,
-  autoPlay: true,
+  autoplay: true,
 });

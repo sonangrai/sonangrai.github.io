@@ -186,6 +186,46 @@ footer .social-part ul li {
   margin: 0 auto;
 }
 
+.intro {
+  padding: 1em 0;
+}
+
+.intro .introduction {
+  font-family: "Poppins", sans-serif;
+}
+
+.intro .introduction h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.intro .introduction p {
+  font-size: 1.4em;
+  margin: 0.8em 0;
+}
+
+.intro .introduction a {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  text-decoration: none;
+  display: block;
+  margin: 1em auto;
+  width: 20%;
+  color: #212121;
+}
+
+.intro .introduction a:hover .arw {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+.intro .introduction a .arw {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 html {
   scroll-behavior: smooth;
 }
