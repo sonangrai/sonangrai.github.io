@@ -1,0 +1,17 @@
+@mixin flexer-full {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flexer($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin menu-ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

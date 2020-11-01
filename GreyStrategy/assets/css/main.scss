@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+@import "./variables";
+@import "./mixins";
+@import "./headfoot";
+@import "./index";
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container-big {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  &:focus {
+    outline: 0;
+  }
+}

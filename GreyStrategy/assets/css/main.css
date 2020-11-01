@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+.mobilemenu {
+  display: none;
+}
+
+header {
+  padding: 0.5em 0;
+}
+
+header .menu-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainmenu {
+  width: 70%;
+}
+
+header .mainmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .mainmenu ul li {
+  padding: 0 1em;
+}
+
+header .mainmenu ul li a {
+  text-transform: uppercase;
+  color: #717171;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+}
+
+header .search-part .search-box {
+  background-color: #eaeaea;
+  padding: 0.5em;
+}
+
+header .search-part .search-box input {
+  border: 0;
+  background-color: transparent;
+}
+
+header .search-part .search-box input:focus {
+  border: 0;
+  outline: 0;
+}
+
+header .search-part .search-box .search-btn {
+  border: 0;
+}
+
+header .social-part {
+  width: 100%;
+}
+
+header .social-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .social-part ul li {
+  margin-left: 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  z-index: 2;
+}
+
+.sticky ul {
+  list-style: none;
+}
+
+.sticky ul li {
+  margin: 0.5em 0;
+}
+
+.sticky ul li a {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #dfdfdf;
+  padding: 2em 0;
+}
+
+footer .small-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .small-menu li:first-child a {
+  border-right: 2px solid #717171;
+}
+
+footer .small-menu li a {
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  color: #717171;
+}
+
+footer .newsletter {
+  text-align: center;
+}
+
+footer .newsletter input {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  padding: 0.8em;
+  border: 0;
+}
+
+footer .newsletter a.subs-btn {
+  padding: 1em;
+  display: inline-block;
+  background: #151515;
+  text-decoration: none;
+  margin: 0.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+}
+
+footer .social-part {
+  width: 100%;
+}
+
+footer .social-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-part ul li {
+  margin-left: 0.5em;
+}
+
+.main-slider .item img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container-big {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button:focus {
+  outline: 0;
+}
+/*# sourceMappingURL=main.css.map */
