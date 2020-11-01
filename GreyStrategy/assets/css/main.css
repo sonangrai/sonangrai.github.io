@@ -226,6 +226,111 @@ footer .social-part ul li {
   transition: 0.3s;
 }
 
+.articles {
+  padding: 2em 0;
+}
+
+.articles .article-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  border-bottom: 2px solid #212121;
+  padding-bottom: 4px;
+  letter-spacing: 4px;
+}
+
+.articles .article-item {
+  padding: 1em 0;
+  border-bottom: 1px solid #212121;
+}
+
+.articles .article-item .title {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.articles .article-item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.articles .article-item .art-img {
+  width: 30%;
+}
+
+.articles .article-item .rd-more {
+  display: block;
+  color: #212121;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.articles .s-title {
+  background-color: #eaeaea;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.articles .bottom {
+  background-color: #eaeaea;
+  font-size: 1em;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articles .bottom span a {
+  color: #212121;
+}
+
+.articles .social-post {
+  height: 540px;
+  overflow-y: scroll;
+}
+
+.articles .social-post .post-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.articles .social-post .post-item .avt {
+  width: 20%;
+}
+
+.articles .social-post .post-item .p-data {
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+}
+
+.articles .social-post .post-item .p-data h2 {
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.articles .social-post .post-item .p-data p {
+  font-size: 1em;
+}
+
 html {
   scroll-behavior: smooth;
 }

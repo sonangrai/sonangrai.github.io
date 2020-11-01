@@ -41,3 +41,83 @@
     }
   }
 }
+
+.articles {
+  padding: 2em 0;
+  .article-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: $font-poppins;
+    font-weight: 900;
+    border-bottom: 2px solid #212121;
+    padding-bottom: 4px;
+    letter-spacing: 4px;
+  }
+  .article-item {
+    padding: 1em 0;
+    border-bottom: 1px solid #212121;
+    .title {
+      font-family: $font-poppins;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 1em;
+    }
+    p {
+      font-family: $font-sans;
+      font-size: 1em;
+    }
+    .art-img {
+      width: 30%;
+    }
+    .rd-more {
+      display: block;
+      color: #212121;
+      margin: 0.5em 0;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  .s-title {
+    background-color: $light-grey;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+    font-family: $font-poppins;
+  }
+  .bottom {
+    background-color: $light-grey;
+    font-size: 1em;
+    padding: 1em;
+    font-family: $font-poppins;
+    @include flexer-full;
+    justify-content: space-between;
+    span {
+      a {
+        color: #212121;
+      }
+    }
+  }
+  .social-post {
+    height: 540px;
+    overflow-y: scroll;
+    .post-item {
+      @include flexer-full;
+      justify-content: space-between;
+      padding: 1em;
+      .avt {
+        width: 20%;
+      }
+      .p-data {
+        width: 70%;
+        font-family: $font-poppins;
+        h2 {
+          font-size: 1em;
+          font-weight: 900;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
