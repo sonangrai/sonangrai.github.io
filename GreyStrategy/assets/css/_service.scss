@@ -1,0 +1,45 @@
+.services {
+  .ser-item {
+    @include flexer-full;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    .ser-img {
+      width: 20%;
+    }
+    .ser-desc {
+      width: 70%;
+      font-family: $font-poppins;
+      h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.impact-owl {
+  .item {
+    font-family: $font-poppins;
+    position: relative;
+    p {
+      background-color: $dark;
+      color: #fff;
+      padding: 2em 2em 6em 2em;
+    }
+    img {
+      position: absolute;
+      width: 50px;
+      border-radius: 50%;
+      bottom: 18%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    strong,
+    span {
+      display: block;
+      text-align: center;
+    }
+    strong {
+      margin-top: 2em;
+    }
+  }
+}

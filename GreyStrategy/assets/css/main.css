@@ -495,6 +495,63 @@ footer .social-part ul li {
   margin: 0;
 }
 
+.services .ser-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.services .ser-item .ser-img {
+  width: 20%;
+}
+
+.services .ser-item .ser-desc {
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+}
+
+.services .ser-item .ser-desc h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.impact-owl .item {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.impact-owl .item p {
+  background-color: #151515;
+  color: #fff;
+  padding: 2em 2em 6em 2em;
+}
+
+.impact-owl .item img {
+  position: absolute;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 18%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.impact-owl .item strong,
+.impact-owl .item span {
+  display: block;
+  text-align: center;
+}
+
+.impact-owl .item strong {
+  margin-top: 2em;
+}
+
 html {
   scroll-behavior: smooth;
 }
