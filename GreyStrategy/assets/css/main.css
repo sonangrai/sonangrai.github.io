@@ -585,6 +585,181 @@ footer .social-part ul li {
   color: #212121;
 }
 
+.contactfrm {
+  display: block;
+}
+
+.contactfrm input,
+.contactfrm textarea,
+.contactfrm select {
+  display: block;
+  border: 1px solid #212121;
+  width: 60%;
+  margin: 1em 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.contactfrm input::-webkit-input-placeholder,
+.contactfrm textarea::-webkit-input-placeholder,
+.contactfrm select::-webkit-input-placeholder {
+  color: #212121;
+}
+
+.contactfrm input:-ms-input-placeholder,
+.contactfrm textarea:-ms-input-placeholder,
+.contactfrm select:-ms-input-placeholder {
+  color: #212121;
+}
+
+.contactfrm input::-ms-input-placeholder,
+.contactfrm textarea::-ms-input-placeholder,
+.contactfrm select::-ms-input-placeholder {
+  color: #212121;
+}
+
+.contactfrm input::placeholder,
+.contactfrm textarea::placeholder,
+.contactfrm select::placeholder {
+  color: #212121;
+}
+
+.contactfrm .snbtn {
+  background-color: #212121;
+  color: #fff;
+  display: block;
+  width: 60%;
+  border: 0;
+  padding: 0.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.contact h3 {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.blogs h2.abt-title {
+  margin: 0 auto;
+}
+
+.blogs .blog-owl {
+  margin: 4em 0;
+  position: relative;
+}
+
+.blogs .blog-owl button.owl-prev {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+
+.blogs .blog-owl button.owl-prev span {
+  font-size: 2em;
+}
+
+.blogs .blog-owl button.owl-next {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+
+.blogs .blog-owl button.owl-next span {
+  font-size: 2em;
+}
+
+.blogs .blog-owl .blog-item {
+  font-family: "Open Sans", sans-serif;
+}
+
+.blogs .blog-owl .blog-item h2 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+
+.blogs .blog-owl .blog-item span {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.blogs .blog-owl .blog-item .rdmr {
+  display: block;
+  background-color: #212121;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.blogs .interview-owl {
+  margin: 4em 0;
+}
+
+.blogs .interview-owl .item {
+  font-family: "Open Sans", sans-serif;
+}
+
+.blogs .interview-owl .item h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.blogs .interview-owl .item img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.blogs .report-owl {
+  position: relative;
+  margin: 4em 0;
+}
+
+.blogs .report-owl button.owl-prev {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+
+.blogs .report-owl button.owl-prev span {
+  font-size: 2em;
+}
+
+.blogs .report-owl button.owl-next {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+
+.blogs .report-owl button.owl-next span {
+  font-size: 2em;
+}
+
+.blogs .report-owl .owl-dots {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.blogs .report-owl .owl-dots button.owl-dot {
+  background-color: #eaeaea !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 0.2em;
+}
+
+.blogs .report-owl .owl-dots button.owl-dot.active {
+  background-color: #717171 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -1,0 +1,96 @@
+.blogs {
+  h2.abt-title {
+    margin: 0 auto;
+  }
+  .blog-owl {
+    margin: 4em 0;
+    position: relative;
+    button.owl-prev {
+      position: absolute;
+      left: -5%;
+      top: 50%;
+      span {
+        font-size: 2em;
+      }
+    }
+    button.owl-next {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      span {
+        font-size: 2em;
+      }
+    }
+    .blog-item {
+      font-family: $font-sans;
+      h2 {
+        font-size: 1.4em;
+        margin: 0.5em 0;
+      }
+      span {
+        display: block;
+        margin: 0.5em 0;
+      }
+      .rdmr {
+        display: block;
+        background-color: #212121;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        border-radius: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .interview-owl {
+    margin: 4em 0;
+    .item {
+      font-family: $font-sans;
+      h2 {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 1em 0;
+      }
+      img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .report-owl {
+    position: relative;
+    margin: 4em 0;
+    button.owl-prev {
+      position: absolute;
+      left: -5%;
+      top: 50%;
+      span {
+        font-size: 2em;
+      }
+    }
+    button.owl-next {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      span {
+        font-size: 2em;
+      }
+    }
+    .owl-dots {
+      text-align: center;
+      margin-top: 2em;
+      button.owl-dot {
+        background-color: $light-grey !important;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 0.2em;
+      }
+      button.owl-dot.active {
+        background-color: $dark-grey !important;
+      }
+    }
+  }
+}
