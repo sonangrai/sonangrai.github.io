@@ -403,6 +403,7 @@ footer .social-part ul li {
   width: 100%;
   height: 6px;
   background-color: #717171;
+  z-index: -1;
 }
 
 .about .abt-title ~ p {
@@ -550,6 +551,38 @@ footer .social-part ul li {
 
 .impact-owl .item strong {
   margin-top: 2em;
+}
+
+.project-cont {
+  font-family: "Poppins", sans-serif;
+}
+
+.project-cont h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 1.2em;
+}
+
+.project-cont .proj-item {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #212121;
+}
+
+.project-cont .proj-item h4 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.project-cont .proj-item p {
+  text-align: center;
+}
+
+.project-cont .proj-item .morebtn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #212121;
 }
 
 html {

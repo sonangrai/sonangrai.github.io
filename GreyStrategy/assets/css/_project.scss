@@ -1,0 +1,26 @@
+.project-cont {
+  font-family: $font-poppins;
+  h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+  }
+  .proj-item {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #212121;
+    h4 {
+      text-align: center;
+      margin: 1em 0;
+    }
+    p {
+      text-align: center;
+    }
+    .morebtn {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      color: #212121;
+    }
+  }
+}
