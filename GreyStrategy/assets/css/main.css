@@ -865,6 +865,9 @@ footer .social-part ul li {
   .intro .introduction a {
     width: 40%;
   }
+  .team-owl .item {
+    margin-bottom: 2em;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -882,6 +885,13 @@ footer .social-part ul li {
   }
   .intro .introduction a {
     width: 70%;
+  }
+  .about .abt-title ~ p,
+  .about .team-item .team-desc p {
+    font-size: 1em;
+  }
+  .about .abt-title {
+    font-size: 1.5em;
   }
 }
 
