@@ -773,6 +773,12 @@ footer .social-part ul li {
   }
 }
 
+@media screen and (max-width: 1136px) {
+  .intro .introduction a {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 1045px) {
   .mainmenu {
     display: none;
@@ -856,11 +862,26 @@ footer .social-part ul li {
     display: block;
     margin: 0 auto;
   }
+  .intro .introduction a {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 576px) {
   header .search-part .search-box {
     padding: 0;
+  }
+  .article-title {
+    margin-top: 1em;
+  }
+  .intro .introduction p {
+    font-size: 1em;
+  }
+  .intro .introduction h2 {
+    font-size: 1.2em;
+  }
+  .intro .introduction a {
+    width: 70%;
   }
 }
 
