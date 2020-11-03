@@ -27,14 +27,14 @@
     <header>
       <div class="container-big">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
             <div class="logo">
               <a href="#!">
                 <img src="./assets/img/logo.png" alt="" />
               </a>
             </div>
           </div>
-          <div class="col-lg-10">
+          <div class="col-lg-10 col-md-10 col-sm-8 col-8">
             <div class="menu-side">
               <div class="mainmenu">
                 <ul>
@@ -47,11 +47,7 @@
                 </ul>
               </div>
               <div class="mobilemenu">
-                <span
-                  style="font-size: 30px; cursor: pointer"
-                  onclick="openNav()"
-                  >&#9776;</span
-                >
+                <span class="open" onclick="openNav()">&#9776;</span>
                 <div id="mySidenav" class="sidenav">
                   <a
                     href="javascript:void(0)"
@@ -461,7 +457,7 @@
     <footer>
       <div class="container-big">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-3 col-12">
             <div class="logo">
               <img src="./assets/img/logo.png" alt="" />
               <ul class="small-menu">
@@ -470,7 +466,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-md-6 col-12">
             <div class="newsletter">
               <h2>Sign Up for updates</h2>
               <div class="subs-box">
@@ -479,7 +475,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-3 col-12">
             <div class="social-part">
               <h2>Follow Us on</h2>
               <ul>
@@ -604,12 +600,3 @@
 ></script>
 <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 <script src="./assets/js/custom.js"></script>
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-</script>

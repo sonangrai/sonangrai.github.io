@@ -1,3 +1,11 @@
+function openNav() {
+  document.getElementById("mySidenav").style.right = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.right = "-100%";
+}
+
 $(".main-slider").owlCarousel({
   loop: true,
   margin: 10,

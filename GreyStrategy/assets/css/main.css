@@ -50,11 +50,18 @@ header .mainmenu ul li a {
 header .search-part .search-box {
   background-color: #eaeaea;
   padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .search-part .search-box input {
   border: 0;
   background-color: transparent;
+  width: 70%;
 }
 
 header .search-part .search-box input:focus {
@@ -758,6 +765,103 @@ footer .social-part ul li {
 
 .blogs .report-owl .owl-dots button.owl-dot.active {
   background-color: #717171 !important;
+}
+
+@media screen and (max-width: 1326px) {
+  header .mainmenu ul li a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .mainmenu {
+    display: none;
+  }
+  .mobilemenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 68%;
+    overflow: hidden;
+  }
+  .mobilemenu .open {
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  .mobilemenu #mySidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -100%;
+    background-color: #717171;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobilemenu #mySidenav a.closebtn {
+    position: absolute;
+    font-size: 3em;
+    right: 10%;
+    top: 5%;
+    color: #fff;
+  }
+  .mobilemenu #mySidenav ul {
+    list-style: none;
+  }
+  .mobilemenu #mySidenav ul li {
+    text-align: center;
+  }
+  .mobilemenu #mySidenav ul li a {
+    color: #fff;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mobilemenu {
+    width: 50%;
+  }
+  .search-part {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobilemenu {
+    width: 20%;
+  }
+  .search-part {
+    width: 69%;
+  }
+  .mobilemenu .open {
+    font-size: 1em;
+  }
+  footer .logo img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .search-part .search-box {
+    padding: 0;
+  }
 }
 
 html {
