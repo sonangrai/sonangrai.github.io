@@ -118,4 +118,10 @@
   .about .abt-title {
     font-size: 1.5em;
   }
+  .contactfrm input,
+  .contactfrm textarea,
+  .contactfrm select,
+  .contactfrm .snbtn {
+    width: 100%;
+  }
 }
