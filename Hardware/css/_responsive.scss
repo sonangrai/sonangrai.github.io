@@ -1,0 +1,66 @@
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90%;
+  }
+  header .lower-head .search-box form {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hotline {
+    display: none !important;
+  }
+  .search-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .catbtn span,
+  .catbtn .flaticon-down-arrow {
+    display: none;
+  }
+  header .lower-head .search-box form {
+    width: 500px;
+  }
+  .catbtn i:before {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link-item {
+    display: none;
+  }
+  .droppe {
+    display: block;
+  }
+  .featured-category .feat-row a,
+  .brands .brand-row a {
+    width: 33%;
+  }
+  .slider .main-slider .owl-nav .owl-prev {
+    left: -10%;
+  }
+  .slider .main-slider .owl-nav .owl-next {
+    right: -10%;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+  .mob-nab {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .featured-category .feat-row a,
+  .brands .brand-row a {
+    width: 50%;
+  }
+  header .lower-head .search-box form button.search {
+    width: 30%;
+  }
+  header .lower-head .search-box form input {
+    width: 50%;
+  }
+}

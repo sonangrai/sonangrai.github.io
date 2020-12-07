@@ -1,0 +1,10 @@
+@mixin full-flexer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flexer($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
