@@ -50,6 +50,9 @@
   .mob-nab {
     display: flex;
   }
+  header .lower-head .category-model .categories .main-category {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -62,5 +65,14 @@
   }
   header .lower-head .search-box form input {
     width: 50%;
+  }
+  header .lower-head .category-model .categories .main-category {
+    width: 100%;
+  }
+  .slider .main-slider .owl-nav .owl-prev {
+    left: -20%;
+  }
+  .slider .main-slider .owl-nav .owl-next {
+    right: -20%;
   }
 }

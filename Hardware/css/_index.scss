@@ -272,6 +272,7 @@ footer {
 }
 
 .hotdeals,
+.featured,
 .newarrivals {
   background-color: #eee;
   .featured-slider {
@@ -312,14 +313,16 @@ footer {
       }
     }
   }
-  &:hover .owl-nav .owl-prev {
-    left: 5%;
-  }
-  &:hover .owl-nav .owl-next {
-    right: 5%;
-  }
-  &:hover {
-    cursor: pointer;
+  .wrapper {
+    &:hover .owl-nav .owl-prev {
+      left: 5%;
+    }
+    &:hover .owl-nav .owl-next {
+      right: 5%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
