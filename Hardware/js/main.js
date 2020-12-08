@@ -38,6 +38,11 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
+  //FAQ
+  $(".bar").click(function () {
+    $(this).find(".answer").slideToggle();
+  });
 });
 
 //Sticky

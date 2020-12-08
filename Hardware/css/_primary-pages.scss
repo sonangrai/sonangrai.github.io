@@ -1,0 +1,112 @@
+.bread-crumb {
+  background: #f4f4f4;
+  .crumb-wrap {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0.5em 0;
+      li {
+        margin-right: 2em;
+        position: relative;
+        a {
+          color: $dark-text;
+        }
+        &:after {
+          position: absolute;
+          content: ">";
+          left: 124%;
+        }
+        &:last-child:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+.about,
+.terms,
+.privacy,
+.delivery,
+.contact,
+.faq {
+  padding: 2em 0;
+}
+
+.faq-desc {
+  h2 {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+  }
+  .faq-container {
+    .bar {
+      padding: 0.8em;
+      border: 1px solid $primary-color;
+      margin-bottom: 1em;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      cursor: pointer;
+      h3 {
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+        span {
+          background-color: $primary-color;
+          padding: 0.5em;
+          color: #fff;
+          display: inline;
+        }
+      }
+      .answer {
+        width: 100%;
+        display: none;
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.contact-form {
+  h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  form {
+    width: 60%;
+    .form-item {
+      @include full-flexer;
+      margin-bottom: 1em;
+      label {
+        width: 100%;
+        font-weight: 600;
+        font-size: 0.8em;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #b9b9b9;
+      }
+      input#submit {
+        background-color: $primary-color;
+        color: #fff;
+        text-transform: uppercase;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+.contact-info {
+  h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .info-item {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+}

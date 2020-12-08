@@ -47,6 +47,7 @@ header {
         button.catbtn {
           background: transparent;
           border: 0;
+          padding: 0;
           &:focus {
             outline: 0;
           }
@@ -344,39 +345,79 @@ footer {
 
 .featured,
 .hotdeals,
+.ondiscount,
 .newarrivals {
   background-color: #eee;
-  .item {
-    position: relative;
-    background-color: #fff;
-    transition: 0.3s;
-    &:hover {
-      box-shadow: $spreaded-box-shadow;
-    }
-    img {
-      height: 300px;
-      object-fit: cover;
-    }
-    i.flaticon-favourite-heart {
-      position: absolute;
-      right: 5%;
-      top: 5%;
-    }
-    i.flaticon-favourite-heart.wished {
-      color: $primary-color;
-    }
-    span.name {
-      margin: 0 0.5em;
-      font-size: 1.2em;
-      font-weight: 600;
-      display: block;
-      padding-top: 1em;
-    }
-    span.cost {
-      margin: 0 0.5em;
-      display: block;
-      color: $primary-color;
+  .owl-stage {
+    @include full-flexer;
+  }
+  .owl-item {
+    display: flex;
+    .item {
+      position: relative;
+      background-color: #fff;
+      transition: 0.3s;
       padding-bottom: 1em;
+      @include full-flexer;
+      .cartbtn {
+        border: 0;
+        background-color: $primary-color;
+        width: 90%;
+        display: block;
+        visibility: hidden;
+        margin: 0 auto;
+        margin-top: 1em;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 6px;
+        transition: 0.5s;
+        opacity: 0;
+      }
+      &:hover {
+        box-shadow: $spreaded-box-shadow;
+        .cartbtn {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      img {
+        height: 300px;
+        object-fit: cover;
+      }
+      i.flaticon-favourite-heart {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+      }
+      i.flaticon-favourite-heart.wished {
+        color: $primary-color;
+      }
+      span.name {
+        margin: 0 0.5em;
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block;
+        padding-top: 1em;
+      }
+      span.cost {
+        margin: 0 0.5em;
+        display: block;
+        color: $primary-color;
+        padding-bottom: 0.5em;
+        del {
+          color: #9c9595;
+        }
+      }
+      span.discount {
+        margin: 0 0.5em;
+        border: 1px solid $primary-color;
+        padding: 0.2em;
+        font-size: 0.6em;
+        display: block;
+        width: 30%;
+        text-align: center;
+        color: $primary-color;
+      }
     }
   }
 }
