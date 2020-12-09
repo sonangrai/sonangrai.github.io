@@ -612,8 +612,8 @@ footer .bottom-foot .social-link ul li a {
 .ondiscount .owl-item .item img,
 .newarrivals .owl-item .item img {
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .featured .owl-item .item i.flaticon-favourite-heart,
