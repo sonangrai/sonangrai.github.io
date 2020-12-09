@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -5,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -945,6 +946,77 @@ section.feat .feat-item i:before {
 .contact-info .info-item {
   font-size: 0.8em;
   margin-bottom: 1em;
+}
+
+.login {
+  padding: 2em 0;
+}
+
+.login .illustration-login {
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .illustration-login h3 {
+  font-size: 0.8em;
+  color: #857d7d;
+  font-weight: 600;
+}
+
+.login .illustration-login h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #f16624;
+  font-weight: 600;
+}
+
+.login .login-forms .nav .nav-item {
+  border-bottom: 1px solid #eee;
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
+}
+
+.login .login-forms .nav .nav-item .nav-link {
+  border: 0;
+  font-weight: 600;
+  color: #857d7d;
+}
+
+.login .login-forms .nav .nav-item .nav-link.active {
+  border-bottom: 2px solid #f16624;
+}
+
+.login .login-forms .tab-content .tab-pane {
+  padding: 3em 0;
+}
+
+.login .login-forms .tab-content .tab-pane .form-group a {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.login .login-forms .tab-content .tab-pane .btnLogin,
+.login .login-forms .tab-content .tab-pane .btnRegister {
+  background-color: #f16624;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 0;
+}
+
+.login .login-forms .tab-content .tab-pane .btnLogin:focus,
+.login .login-forms .tab-content .tab-pane .btnRegister:focus {
+  outline: 0;
 }
 
 @media screen and (max-width: 1200px) {
