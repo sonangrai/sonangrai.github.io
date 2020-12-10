@@ -1019,6 +1019,71 @@ section.feat .feat-item i:before {
   outline: 0;
 }
 
+.track {
+  padding: 4em 0;
+  background-image: url(https://cdn.pixabay.com/photo/2014/09/11/22/00/dock-441989_1280.jpg);
+  background-color: #000000bd;
+  background-blend-mode: overlay;
+}
+
+.track .illustration-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.track .illustration-track svg {
+  fill: #f16624;
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.track .track-forms {
+  border: 1px solid #e7e7e7;
+  padding: 1em;
+}
+
+.track .track-forms h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 1em;
+  color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.track .track-forms p {
+  margin: 1em 0;
+  color: #fff;
+}
+
+.track .track-forms form {
+  padding: 1em 0;
+}
+
+.track .track-forms form input {
+  padding: 0.5em;
+  display: block;
+}
+
+.track .track-forms form input[type="button"] {
+  background-color: #f16624;
+  color: #fff;
+  border: 0;
+  margin-top: 1em;
+}
+
+.track .track-forms form input[type="button"]:focus {
+  outline: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;

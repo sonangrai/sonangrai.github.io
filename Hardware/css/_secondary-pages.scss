@@ -1,0 +1,47 @@
+.track {
+  padding: 4em 0;
+  background-image: url(https://cdn.pixabay.com/photo/2014/09/11/22/00/dock-441989_1280.jpg);
+  background-color: #000000bd;
+  background-blend-mode: overlay;
+  .illustration-track {
+    @include flexer(center, center);
+    height: 100%;
+    svg {
+      fill: $primary-color;
+      display: block;
+      width: 200px;
+      height: auto;
+    }
+  }
+  .track-forms {
+    border: 1px solid #e7e7e7;
+    padding: 1em;
+    h3 {
+      font-size: 1.2em;
+      font-weight: 600;
+      padding-bottom: 1em;
+      color: #fff;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    p {
+      margin: 1em 0;
+      color: #fff;
+    }
+    form {
+      padding: 1em 0;
+      input {
+        padding: 0.5em;
+        display: block;
+      }
+      input[type="button"] {
+        background-color: $primary-color;
+        color: #fff;
+        border: 0;
+        margin-top: 1em;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
