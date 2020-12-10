@@ -1182,6 +1182,38 @@ section.feat .feat-item i:before {
   color: #f16624;
 }
 
+.changepassword {
+  padding: 2em 0;
+}
+
+.changepassword .changepassword-forms .register-form {
+  width: 340px;
+  padding: 1em;
+  margin: 0 auto;
+  border: 1px solid #e7e7e7;
+}
+
+.changepassword .changepassword-forms .register-form h2 {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.changepassword .changepassword-forms .register-form form {
+  margin-top: 1em;
+}
+
+.changepassword .changepassword-forms .register-form form input[type="submit"] {
+  background-color: #f16624;
+  color: #fff;
+  border: 0;
+  padding: 0.5em 1em;
+}
+
+.changepassword .changepassword-forms .register-form form input[type="submit"]:focus {
+  outline: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;

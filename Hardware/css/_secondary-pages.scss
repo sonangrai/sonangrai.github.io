@@ -59,3 +59,31 @@
     }
   }
 }
+.changepassword {
+  padding: 2em 0;
+  .changepassword-forms {
+    .register-form {
+      width: 340px;
+      padding: 1em;
+      margin: 0 auto;
+      border: 1px solid #e7e7e7;
+      h2 {
+        font-size: 1.2em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #e7e7e7;
+      }
+      form {
+        margin-top: 1em;
+        input[type="submit"] {
+          background-color: $primary-color;
+          color: #fff;
+          border: 0;
+          padding: 0.5em 1em;
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
