@@ -45,3 +45,17 @@
     }
   }
 }
+
+.none {
+  height: 500px;
+  @include flexer(center, center);
+  p {
+    text-align: center;
+    strong {
+      font-size: 4em;
+      display: block;
+      animation: jello-vertical 0.9s infinite both;
+      color: $primary-color;
+    }
+  }
+}
