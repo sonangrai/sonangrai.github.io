@@ -1259,6 +1259,32 @@ section.feat .feat-item i:before {
   margin-left: 1em;
 }
 
+.checkout-box {
+  padding: 1em;
+  margin: 2em 0;
+  border: 1px solid #e7e7e7;
+  display: inline-block;
+}
+
+.checkout-box ul {
+  padding: 0;
+  list-style: none;
+}
+
+.checkout-box ul li {
+  border-bottom: 1px dotted #e7e7e7;
+  padding: 1em 0;
+}
+
+.checkout-box .checkoutbtn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f16624;
+  padding: 0.5em 1em;
+  display: inline;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;

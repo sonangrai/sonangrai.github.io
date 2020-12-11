@@ -127,3 +127,26 @@
     }
   }
 }
+
+.checkout-box {
+  padding: 1em;
+  margin: 2em 0;
+  border: 1px solid #e7e7e7;
+  display: inline-block;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      border-bottom: 1px dotted #e7e7e7;
+      padding: 1em 0;
+    }
+  }
+  .checkoutbtn {
+    color: #fff;
+    text-decoration: none;
+    background-color: $primary-color;
+    padding: 0.5em 1em;
+    display: inline;
+    cursor: pointer;
+  }
+}
