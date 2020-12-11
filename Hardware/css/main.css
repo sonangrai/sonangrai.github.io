@@ -1285,6 +1285,44 @@ section.feat .feat-item i:before {
   cursor: pointer;
 }
 
+a.orderbtn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f16624;
+  padding: 0.5em 1em;
+  display: inline;
+  cursor: pointer;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.checkout {
+  padding: 2em 0;
+}
+
+.checkout .checkout-forms h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.checkout .final-checkout {
+  display: block;
+}
+
+.checkout .final-checkout h2 {
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #e7e7e7;
+}
+
+.checkout .final-checkout .total {
+  display: block;
+  background-color: #857d7d;
+  color: #fff;
+  padding: 1em;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;

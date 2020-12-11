@@ -150,3 +150,39 @@
     cursor: pointer;
   }
 }
+
+a.orderbtn {
+  color: #fff;
+  text-decoration: none;
+  background-color: $primary-color;
+  padding: 0.5em 1em;
+  display: inline;
+  cursor: pointer;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.checkout {
+  padding: 2em 0;
+  .checkout-forms {
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+  }
+  .final-checkout {
+    display: block;
+    h2 {
+      font-size: 1.2em;
+      margin: 0;
+      padding-bottom: 1em;
+      border-bottom: 1px dotted #e7e7e7;
+    }
+    .total {
+      display: block;
+      background-color: $dark-text;
+      color: #fff;
+      padding: 1em;
+    }
+  }
+}
