@@ -87,3 +87,43 @@
     }
   }
 }
+
+.wishlist {
+  padding: 2em 0;
+  .wishlist-box {
+    table {
+      width: 100%;
+      tr {
+        border-bottom: 1px solid #e7e7e7;
+        td,
+        th {
+          padding: 1em 0;
+        }
+        td.img-wrap {
+          width: 140px;
+          img {
+            width: 90%;
+          }
+        }
+        td {
+          button {
+            border: 0;
+            padding: 0.5em 1em;
+            color: #fff;
+            i:before {
+              margin-left: 0;
+              font-size: 1em;
+            }
+          }
+          .removewish {
+            background-color: #fd5353;
+          }
+          .addcart {
+            background-color: $primary-color;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+}

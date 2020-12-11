@@ -53,6 +53,25 @@
   header .lower-head .category-model .categories .main-category {
     width: 45%;
   }
+  .wishlist {
+    padding: 2em 0;
+    .wishlist-box {
+      overflow-x: scroll;
+      table {
+        width: 650px;
+        td.img-wrap {
+          width: 65px;
+        }
+        tr {
+          td {
+            button {
+              padding: 0.2em 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 540px) {

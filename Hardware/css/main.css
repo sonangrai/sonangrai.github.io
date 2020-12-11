@@ -1214,6 +1214,51 @@ section.feat .feat-item i:before {
   outline: 0;
 }
 
+.wishlist {
+  padding: 2em 0;
+}
+
+.wishlist .wishlist-box table {
+  width: 100%;
+}
+
+.wishlist .wishlist-box table tr {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.wishlist .wishlist-box table tr td,
+.wishlist .wishlist-box table tr th {
+  padding: 1em 0;
+}
+
+.wishlist .wishlist-box table tr td.img-wrap {
+  width: 140px;
+}
+
+.wishlist .wishlist-box table tr td.img-wrap img {
+  width: 90%;
+}
+
+.wishlist .wishlist-box table tr td button {
+  border: 0;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+
+.wishlist .wishlist-box table tr td button i:before {
+  margin-left: 0;
+  font-size: 1em;
+}
+
+.wishlist .wishlist-box table tr td .removewish {
+  background-color: #fd5353;
+}
+
+.wishlist .wishlist-box table tr td .addcart {
+  background-color: #f16624;
+  margin-left: 1em;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;
@@ -1274,6 +1319,21 @@ section.feat .feat-item i:before {
   }
   header .lower-head .category-model .categories .main-category {
     width: 45%;
+  }
+  .wishlist {
+    padding: 2em 0;
+  }
+  .wishlist .wishlist-box {
+    overflow-x: scroll;
+  }
+  .wishlist .wishlist-box table {
+    width: 650px;
+  }
+  .wishlist .wishlist-box table td.img-wrap {
+    width: 65px;
+  }
+  .wishlist .wishlist-box table tr td button {
+    padding: 0.2em 0.5em;
   }
 }
 
