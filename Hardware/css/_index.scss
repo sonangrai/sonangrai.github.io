@@ -355,10 +355,10 @@ footer {
     display: flex;
     .item {
       position: relative;
-      background-color: #fff;
       transition: 0.3s;
       padding-bottom: 1em;
       @include full-flexer;
+      border: 1px solid #cfcece;
       .cartbtn {
         border: 0;
         background-color: $primary-color;
@@ -380,9 +380,12 @@ footer {
           opacity: 1;
         }
       }
-      img {
+      .img-box {
         height: 300px;
-        object-fit: contain;
+        img {
+          object-fit: contain;
+          height: 100%;
+        }
       }
       i.flaticon-favourite-heart {
         position: absolute;
@@ -392,31 +395,41 @@ footer {
       i.flaticon-favourite-heart.wished {
         color: $primary-color;
       }
-      span.name {
-        margin: 0 0.5em;
-        font-size: 1.2em;
-        font-weight: 600;
-        display: block;
-        padding-top: 1em;
-      }
-      span.cost {
-        margin: 0 0.5em;
-        display: block;
-        color: $primary-color;
-        padding-bottom: 0.5em;
-        del {
-          color: #9c9595;
+      .plank {
+        padding: 1em;
+        border-top: 1px solid #cfcece;
+        span.name {
+          a {
+            font-size: 1.2em;
+            font-weight: 600;
+            display: block;
+            color: $dark-text;
+          }
         }
-      }
-      span.discount {
-        margin: 0 0.5em;
-        border: 1px solid $primary-color;
-        padding: 0.2em;
-        font-size: 0.6em;
-        display: block;
-        width: 30%;
-        text-align: center;
-        color: $primary-color;
+        span.cost {
+          display: block;
+          color: $primary-color;
+          padding-bottom: 0.5em;
+          del {
+            color: #9c9595;
+          }
+        }
+        span.discount {
+          border: 1px solid $primary-color;
+          padding: 0.2em;
+          font-size: 0.6em;
+          display: block;
+          width: 30%;
+          text-align: center;
+          color: $primary-color;
+        }
+        .rating {
+          i:before {
+            margin-left: 0;
+            font-size: 1em;
+            color: $star-color;
+          }
+        }
       }
     }
   }

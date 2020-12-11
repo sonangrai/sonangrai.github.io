@@ -634,7 +634,6 @@ footer .bottom-foot .social-link ul li a {
 .ondiscount .owl-item .item,
 .newarrivals .owl-item .item {
   position: relative;
-  background-color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-bottom: 1em;
@@ -643,6 +642,7 @@ footer .bottom-foot .social-link ul li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border: 1px solid #cfcece;
 }
 
 .featured .owl-item .item .cartbtn,
@@ -680,13 +680,20 @@ footer .bottom-foot .social-link ul li a {
   opacity: 1;
 }
 
-.featured .owl-item .item img,
-.hotdeals .owl-item .item img,
-.ondiscount .owl-item .item img,
-.newarrivals .owl-item .item img {
+.featured .owl-item .item .img-box,
+.hotdeals .owl-item .item .img-box,
+.ondiscount .owl-item .item .img-box,
+.newarrivals .owl-item .item .img-box {
   height: 300px;
+}
+
+.featured .owl-item .item .img-box img,
+.hotdeals .owl-item .item .img-box img,
+.ondiscount .owl-item .item .img-box img,
+.newarrivals .owl-item .item .img-box img {
   -o-object-fit: contain;
      object-fit: contain;
+  height: 100%;
 }
 
 .featured .owl-item .item i.flaticon-favourite-heart,
@@ -705,39 +712,44 @@ footer .bottom-foot .social-link ul li a {
   color: #f16624;
 }
 
-.featured .owl-item .item span.name,
-.hotdeals .owl-item .item span.name,
-.ondiscount .owl-item .item span.name,
-.newarrivals .owl-item .item span.name {
-  margin: 0 0.5em;
+.featured .owl-item .item .plank,
+.hotdeals .owl-item .item .plank,
+.ondiscount .owl-item .item .plank,
+.newarrivals .owl-item .item .plank {
+  padding: 1em;
+  border-top: 1px solid #cfcece;
+}
+
+.featured .owl-item .item .plank span.name a,
+.hotdeals .owl-item .item .plank span.name a,
+.ondiscount .owl-item .item .plank span.name a,
+.newarrivals .owl-item .item .plank span.name a {
   font-size: 1.2em;
   font-weight: 600;
   display: block;
-  padding-top: 1em;
+  color: #857d7d;
 }
 
-.featured .owl-item .item span.cost,
-.hotdeals .owl-item .item span.cost,
-.ondiscount .owl-item .item span.cost,
-.newarrivals .owl-item .item span.cost {
-  margin: 0 0.5em;
+.featured .owl-item .item .plank span.cost,
+.hotdeals .owl-item .item .plank span.cost,
+.ondiscount .owl-item .item .plank span.cost,
+.newarrivals .owl-item .item .plank span.cost {
   display: block;
   color: #f16624;
   padding-bottom: 0.5em;
 }
 
-.featured .owl-item .item span.cost del,
-.hotdeals .owl-item .item span.cost del,
-.ondiscount .owl-item .item span.cost del,
-.newarrivals .owl-item .item span.cost del {
+.featured .owl-item .item .plank span.cost del,
+.hotdeals .owl-item .item .plank span.cost del,
+.ondiscount .owl-item .item .plank span.cost del,
+.newarrivals .owl-item .item .plank span.cost del {
   color: #9c9595;
 }
 
-.featured .owl-item .item span.discount,
-.hotdeals .owl-item .item span.discount,
-.ondiscount .owl-item .item span.discount,
-.newarrivals .owl-item .item span.discount {
-  margin: 0 0.5em;
+.featured .owl-item .item .plank span.discount,
+.hotdeals .owl-item .item .plank span.discount,
+.ondiscount .owl-item .item .plank span.discount,
+.newarrivals .owl-item .item .plank span.discount {
   border: 1px solid #f16624;
   padding: 0.2em;
   font-size: 0.6em;
@@ -745,6 +757,15 @@ footer .bottom-foot .social-link ul li a {
   width: 30%;
   text-align: center;
   color: #f16624;
+}
+
+.featured .owl-item .item .plank .rating i:before,
+.hotdeals .owl-item .item .plank .rating i:before,
+.ondiscount .owl-item .item .plank .rating i:before,
+.newarrivals .owl-item .item .plank .rating i:before {
+  margin-left: 0;
+  font-size: 1em;
+  color: #f6ab32;
 }
 
 section.feat {

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 07/12/2020 07:27
+  	Creation date: 11/12/2020 05:02
   	*/
 
 @font-face {
@@ -56,3 +56,5 @@ margin-left: 20px;
 .flaticon-customer-support:before { content: "\f117"; }
 .flaticon-calculator:before { content: "\f118"; }
 .flaticon-gardening-tools:before { content: "\f119"; }
+.flaticon-star-1:before { content: "\f11a"; }
+.flaticon-star:before { content: "\f11b"; }

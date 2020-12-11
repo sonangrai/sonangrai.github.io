@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 07/12/2020 07:27
+    Creation date: 11/12/2020 05:02
     */
 
     @font-face {
@@ -63,6 +63,8 @@
 .flaticon-customer-support:before { content: "\f117"; }
 .flaticon-calculator:before { content: "\f118"; }
 .flaticon-gardening-tools:before { content: "\f119"; }
+.flaticon-star-1:before { content: "\f11a"; }
+.flaticon-star:before { content: "\f11b"; }
     
     $font-Flaticon-favourite-heart: "\f100";
     $font-Flaticon-box: "\f101";
@@ -90,3 +92,5 @@
     $font-Flaticon-customer-support: "\f117";
     $font-Flaticon-calculator: "\f118";
     $font-Flaticon-gardening-tools: "\f119";
+    $font-Flaticon-star-1: "\f11a";
+    $font-Flaticon-star: "\f11b";

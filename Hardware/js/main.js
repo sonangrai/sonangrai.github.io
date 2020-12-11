@@ -23,9 +23,10 @@ jQuery(document).ready(function ($) {
   $(".featured-slider").owlCarousel({
     loop: true,
     margin: 20,
-    nav: true,
+    nav: false,
     dots: false,
     autoplay: true,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
