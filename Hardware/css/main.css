@@ -911,6 +911,169 @@ section.feat .feat-item i:before {
   padding: 0.2em;
 }
 
+.categories {
+  padding: 2em 0;
+}
+
+.categories .cat-cards h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #857d7d;
+}
+
+.categories .cat-cards .item {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #cfcece;
+}
+
+.categories .cat-cards .item .cartbtn {
+  border: 0;
+  background-color: #f16624;
+  width: 90%;
+  display: block;
+  visibility: hidden;
+  margin: 0 auto;
+  margin-top: 1em;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.categories .cat-cards .item:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+}
+
+.categories .cat-cards .item:hover .cartbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+.categories .cat-cards .item .img-box {
+  height: 300px;
+}
+
+.categories .cat-cards .item .img-box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.categories .cat-cards .item i.flaticon-favourite-heart {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.categories .cat-cards .item i.flaticon-favourite-heart.wished {
+  color: #f16624;
+}
+
+.categories .cat-cards .item .plank {
+  padding: 1em;
+  border-top: 1px solid #cfcece;
+}
+
+.categories .cat-cards .item .plank span.name a {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: block;
+  color: #857d7d;
+}
+
+.categories .cat-cards .item .plank span.cost {
+  display: block;
+  color: #f16624;
+  padding-bottom: 0.5em;
+}
+
+.categories .cat-cards .item .plank span.cost del {
+  color: #9c9595;
+}
+
+.categories .cat-cards .item .plank span.discount {
+  border: 1px solid #f16624;
+  padding: 0.2em;
+  font-size: 0.6em;
+  display: block;
+  width: 30%;
+  text-align: center;
+  color: #f16624;
+}
+
+.categories .cat-cards .item .plank .rating i:before {
+  margin-left: 0;
+  font-size: 1em;
+  color: #f6ab32;
+}
+
+.categories .filter-part .filter-item {
+  margin-bottom: 2em;
+}
+
+.categories .filter-part .filter-item h2 {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #857d7d;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.categories .filter-part .filter-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories .filter-part .filter-item ul li a {
+  color: #000;
+  margin-bottom: 1em;
+  display: block;
+  font: 0.9em;
+}
+
+.categories .filter-part .filter-item button {
+  background-color: #f16624;
+  color: #fff;
+  border-radius: 0;
+}
+
+.categories .paginations {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories .paginations .page-item.active .page-link {
+  background-color: #f16624;
+  border-color: #f16624;
+  color: #fff;
+}
+
+.categories .paginations .page-item .page-link {
+  color: #f16624;
+}
+
 .bread-crumb {
   background: #f4f4f4;
 }
@@ -1420,6 +1583,9 @@ a.orderbtn {
   .wishlist .wishlist-box table tr td button {
     padding: 0.2em 0.5em;
   }
+  .categories .cat-cards .item {
+    margin-bottom: 1.5em;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1441,6 +1607,19 @@ a.orderbtn {
   }
   .slider .main-slider .owl-nav .owl-next {
     right: -20%;
+  }
+  .categories .cat-cards .item .plank span.name a {
+    font-size: 1em;
+  }
+  .categories .cat-cards .item .cartbtn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .rev-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=main.css.map */

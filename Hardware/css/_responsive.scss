@@ -72,6 +72,9 @@
       }
     }
   }
+  .categories .cat-cards .item {
+    margin-bottom: 1.5em;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -93,5 +96,15 @@
   }
   .slider .main-slider .owl-nav .owl-next {
     right: -20%;
+  }
+  .categories .cat-cards .item .plank span.name a {
+    font-size: 1em;
+  }
+  .categories .cat-cards .item .cartbtn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .rev-sm {
+    flex-direction: column-reverse;
   }
 }

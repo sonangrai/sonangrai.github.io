@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Ace Hardware</title>
+    <title>Categories - Ace Hardware</title>
     <link rel="icon" href="./img/logo.png" type="image/png" sizes="36x16" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./font/flaticon.css" />
@@ -284,7 +284,10 @@
                 <li>
                   <a href="./">Home</a>
                 </li>
-                <li>Contact</li>
+                <li>
+                  <a href="./">Bathroom</a>
+                </li>
+                <li>Categories</li>
               </ul>
             </div>
           </div>
@@ -293,150 +296,245 @@
     </div>
 
     <!-- Login Part -->
-    <section class="login">
+    <section class="categories">
       <div class="wrapper">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-            <div class="illustration-login">
-              <div>
-                <h3>Get logged in or Register for free to</h3>
-                <h2>Ace Hardware</h2>
-                <img src="./img/logo.png" alt="" />
+        <div class="row rev-sm">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="filter-part">
+              <div class="filter-item">
+                <h2>Sub Categories</h2>
+                <ul>
+                  <li>
+                    <a href="#!">Bags</a>
+                  </li>
+                  <li>
+                    <a href="#!">Gloves</a>
+                  </li>
+                  <li>
+                    <a href="#!">Beon Mask</a>
+                  </li>
+                  <li>
+                    <a href="#!">Riding Jackets</a>
+                  </li>
+                  <li>
+                    <a href="#!">Snap Back Caps</a>
+                  </li>
+                  <li>
+                    <a href="#!">Knee guard and Elbow Guard </a>
+                  </li>
+                  <li>
+                    <a href="#!">Riding goggles </a>
+                  </li>
+                  <li>
+                    <a href="#!">Shoe saver</a>
+                  </li>
+                  <li>
+                    <a href="#!">Helmet Intercom</a>
+                  </li>
+                  <li>
+                    <a href="#!">Riding Jersey </a>
+                  </li>
+                </ul>
               </div>
+              <form>
+                <div class="filter-item">
+                  <h2>Price Range</h2>
+                  <div class="price-item">
+                    <input
+                      id="allPrice"
+                      type="radio"
+                      class="priceFilter"
+                      name="priceFilter"
+                      value="all"
+                    />
+                    <label for="allPrice">All Prices</label>
+                  </div>
+                  <div class="price-item">
+                    <input
+                      id="zeroFiveHund"
+                      type="radio"
+                      class="priceFilter"
+                      name="priceFilter"
+                      value="zeroFiveHund"
+                    />
+                    <label for="zeroFiveHund">Rs. 0 - Rs. 500</label>
+                  </div>
+                  <div class="price-item">
+                    <input
+                      id="fiveHundTwentyFiveHund"
+                      class="priceFilter"
+                      type="radio"
+                      name="priceFilter"
+                      value="fiveHundTwentyFiveHund"
+                    />
+                    <label for="fiveHundTwentyFiveHund"
+                      >Rs. 500 - Rs. 2,500</label
+                    >
+                  </div>
+                  <div class="price-item">
+                    <input
+                      id="twentyFiveHundFiveThou"
+                      class="priceFilter"
+                      type="radio"
+                      name="priceFilter"
+                      value="twentyFiveHundFiveThou"
+                    />
+                    <label for="twentyFiveHundFiveThou"
+                      >Rs. 2,500 - Rs. 5,000</label
+                    >
+                  </div>
+                  <div class="price-form">
+                    <div class="form-group">
+                      <label for="">From</label>
+                      <input
+                        type="text"
+                        name="range[]"
+                        placeholder="Starting..."
+                        class="form-control"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">To</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ending..."
+                        name="range[]"
+                        value=""
+                      />
+                    </div>
+                    <button type="submit" class="btn pricebtn">Go</button>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="form-group">
+                    <label for="">Brand Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Brand Name"
+                      name="brand]"
+                      value=""
+                    />
+                  </div>
+                  <button type="submit" class="btn pricebtn">Search</button>
+                </div>
+                <div class="filter-item">
+                  <h2>Colors</h2>
+                  <ul>
+                    <li><a href="#!">All</a></li>
+                    <li><a href="#!">Red</a></li>
+                    <li><a href="#!">Blue</a></li>
+                    <li><a href="#!">Yellow</a></li>
+                    <li><a href="#!">Green</a></li>
+                  </ul>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-            <div class="login-forms">
-              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="login-tab"
-                    data-toggle="tab"
-                    href="#login"
-                    role="tab"
-                    aria-controls="login"
-                    aria-selected="true"
-                    >Login</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="register-tab"
-                    data-toggle="tab"
-                    href="#register"
-                    role="tab"
-                    aria-controls="register"
-                    aria-selected="false"
-                    >Register</a
-                  >
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="login"
-                  role="tabpanel"
-                  aria-labelledby="login-tab"
-                >
-                  <div class="row register-form">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Your Email *"
-                          value=""
-                        />
+          <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
+            <div class="cat-cards">
+              <div class="row">
+                <div class="col-12">
+                  <h3>Categories Name</h3>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="item">
+                    <div class="img-box">
+                      <img
+                        src="https://cdn.pixabay.com/photo/2017/07/21/14/47/tools-2525957_960_720.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="plank">
+                      <i class="flaticon-favourite-heart wished"></i>
+                      <div class="rating">
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star"></i></span>
+                        <span><i class="flaticon-star"></i></span>
                       </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          class="form-control"
-                          placeholder="Password *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <a href="./forgot.html">Forgot Password</a>
-                      </div>
-                      <input type="submit" class="btnLogin" value="Register" />
+                      <span class="name"
+                        ><a href="#!">Name of the Product</a></span
+                      >
+                      <span class="cost">Nrs 1300</span>
+                      <button class="cartbtn">Add To Cart</button>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade show"
-                  id="register"
-                  role="tabpanel"
-                  aria-labelledby="register-tab"
-                >
-                  <div class="row register-form">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="First Name *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Last Name *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          maxlength="10"
-                          minlength="10"
-                          class="form-control"
-                          placeholder="Phone *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          class="form-control"
-                          placeholder="Password *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          class="form-control"
-                          placeholder="Confirm Password *"
-                          value=""
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="`Answer *"
-                          value=""
-                        />
-                      </div>
-                      <input
-                        type="submit"
-                        class="btnRegister"
-                        value="Register"
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="item">
+                    <div class="img-box">
+                      <img
+                        src="https://cdn.pixabay.com/photo/2015/09/21/16/20/tools-950126_1280.jpg"
+                        alt=""
                       />
                     </div>
+                    <div class="plank">
+                      <i class="flaticon-favourite-heart"></i>
+                      <div class="rating">
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star"></i></span>
+                      </div>
+                      <span class="name"
+                        ><a href="#!">Name of the Product</a></span
+                      >
+                      <span class="cost">Nrs 1300</span>
+                      <button class="cartbtn">Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="item">
+                    <div class="img-box">
+                      <img
+                        src="https://cdn.pixabay.com/photo/2015/06/05/23/10/nuts-798945_960_720.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="plank">
+                      <i class="flaticon-favourite-heart"></i>
+                      <div class="rating">
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                        <span><i class="flaticon-star-1"></i></span>
+                      </div>
+                      <span class="name"
+                        ><a href="#!">Name of the Product</a></span
+                      >
+                      <span class="cost">Nrs 1300</span>
+                      <button class="cartbtn">Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="paginations">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
