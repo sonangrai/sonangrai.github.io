@@ -44,8 +44,6 @@ jQuery(document).ready(function ($) {
   $(".bar").click(function () {
     $(this).find(".answer").slideToggle();
   });
-
-  $("a#single_image").fancybox();
 });
 
 //Sticky

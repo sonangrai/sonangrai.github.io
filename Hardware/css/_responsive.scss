@@ -87,6 +87,13 @@
     margin-top: 2em;
     text-align: center;
   }
+  .order-info {
+    margin-top: 2em;
+  }
+  .tracking .track-result .tr-items .tr h3 span {
+    margin-bottom: 1em;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -118,5 +125,15 @@
   }
   .rev-sm {
     flex-direction: column-reverse;
+  }
+  .feat-item {
+    .desc {
+      h4 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
   }
 }

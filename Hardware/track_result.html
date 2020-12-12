@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wishlists - Ace Hardware</title>
+    <title>Track Result - Ace Hardware</title>
     <link rel="icon" href="./img/logo.png" type="image/png" sizes="36x16" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./font/flaticon.css" />
@@ -284,7 +284,7 @@
                 <li>
                   <a href="./">Home</a>
                 </li>
-                <li>Wishlists</li>
+                <li>Track Result (Item Name)</li>
               </ul>
             </div>
           </div>
@@ -292,59 +292,49 @@
       </div>
     </div>
 
-    <!-- Wishlist Part -->
-    <section class="wishlist">
+    <!-- Track Part -->
+    <section class="tracking">
       <div class="wrapper">
         <div class="row">
-          <div class="col-12">
-            <div class="wishlist-box">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Image</th>
-                    <th>Product Name</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="img-wrap">
-                      <img
-                        src="https://cdn.pixabay.com/photo/2015/06/05/23/10/nuts-798945_960_720.jpg"
-                        alt=""
-                      />
-                    </td>
-                    <td>Name of the Product</td>
-                    <td>Rs 2000</td>
-                    <td>
-                      <button class="removewish"> &#x2715 Remove</button>
-                      <button class="addcart">
-                        <i class="flaticon-shopping-cart"></i> Add to Cart
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="img-wrap">
-                      <img
-                        src="https://cdn.pixabay.com/photo/2015/06/05/23/10/nuts-798945_960_720.jpg"
-                        alt=""
-                      />
-                    </td>
-                    <td>Name of the Product</td>
-                    <td>Rs 2000</td>
-                    <td>
-                      <button class="removewish"> &#x2715 Remove</button>
-                      <button class="addcart">
-                        <i class="flaticon-shopping-cart"></i> Add to Cart
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>              
-              <div class="empty-box">
-                <span>Sorry, You Dont have any item in Cart</span>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+            <div class="track-result">
+              <h2>Tracking Result of <span>Item Name</span></h2>
+              <div class="track-box">
+                <div class="tr-items">
+                  <div class="tr done">
+                    <h3><span>Jan 12, 2020</span> Order is processed</h3>
+                    <p>
+                      We have recieved your order and it is being processed.
+                    </p>
+                  </div>
+                  <div class="tr">
+                    <h3>
+                      <span>Jan 13, 2020</span> Shipping by the delivery
+                      personals
+                    </h3>
+                    <p>
+                      Your order is recieved by the shipping department and is
+                      on its way.
+                    </p>
+                  </div>
+                  <div class="tr">
+                    <h3><span>Jan 13, 2020</span> Delivered</h3>
+                    <p>WE delivered your order successfully.</p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="order-info">
+              <h2>Order Info</h2>
+              <ul>
+                <li><strong>Sub Total</strong>: Rs. 4000</li>
+                <li><strong>Discount</strong>: Rs. 1000</li>
+                <li><strong>Total Weight</strong>: 10Kg</li>
+                <li><strong>Delivery Charge</strong>: Rs. 100</li>
+              </ul>
+              <span class="total"><strong>Grand Total</strong>: Rs. 3000</span>
             </div>
           </div>
         </div>
