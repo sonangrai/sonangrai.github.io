@@ -75,9 +75,21 @@
   .categories .cat-cards .item {
     margin-bottom: 1.5em;
   }
+  .product-info {
+    margin-top: 2em;
+  }
+  .review-item figure img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+  .review-form form {
+    margin-top: 2em;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 576px) {
   .featured-category .feat-row a,
   .brands .brand-row a {
     width: 50%;
