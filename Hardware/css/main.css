@@ -1885,6 +1885,117 @@ a.orderbtn {
   height: 4px;
 }
 
+.single-product .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.single-product .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-product .owl-item .item {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #cfcece;
+}
+
+.single-product .owl-item .item .cartbtn {
+  border: 0;
+  background-color: #f16624;
+  width: 90%;
+  display: block;
+  visibility: hidden;
+  margin: 0 auto;
+  margin-top: 1em;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.single-product .owl-item .item:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+}
+
+.single-product .owl-item .item:hover .cartbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+.single-product .owl-item .item .img-box {
+  height: 300px;
+}
+
+.single-product .owl-item .item .img-box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.single-product .owl-item .item i.flaticon-favourite-heart {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.single-product .owl-item .item i.flaticon-favourite-heart.wished {
+  color: #f16624;
+}
+
+.single-product .owl-item .item .plank {
+  padding: 1em;
+  border-top: 1px solid #cfcece;
+}
+
+.single-product .owl-item .item .plank span.name a {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: block;
+  color: #857d7d;
+}
+
+.single-product .owl-item .item .plank span.cost {
+  display: block;
+  color: #f16624;
+  padding-bottom: 0.5em;
+}
+
+.single-product .owl-item .item .plank span.cost del {
+  color: #9c9595;
+}
+
+.single-product .owl-item .item .plank span.discount {
+  border: 1px solid #f16624;
+  padding: 0.2em;
+  font-size: 0.6em;
+  display: block;
+  width: 30%;
+  text-align: center;
+  color: #f16624;
+}
+
+.single-product .owl-item .item .plank .rating i:before {
+  margin-left: 0;
+  font-size: 1em;
+  color: #f6ab32;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 90%;
