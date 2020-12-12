@@ -44,6 +44,8 @@ jQuery(document).ready(function ($) {
   $(".bar").click(function () {
     $(this).find(".answer").slideToggle();
   });
+
+  $("a#single_image").fancybox();
 });
 
 //Sticky
@@ -148,4 +150,12 @@ $(document).ready(function () {
   });
 });
 
-$("a#single_image").fancybox();
+//Review
+const starEls = document.querySelectorAll(".star.rating");
+starEls.forEach((star) => {
+  star.addEventListener("click", function (e) {
+    let starEl = e.currentTarget;
+    console.log(starEl.parentNode.dataset.stars + ", " + starEl.dataset.rating);
+    starEl.parentNode.setAttribute("data-stars", starEl.dataset.rating);
+  });
+});
