@@ -3,30 +3,19 @@ body{
 	display: flex;
 	height: 100vh;
 	align-items: center;
-    background: #61cfe7;
 	justify-content: center;
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
+    background: #10afc8;
 }
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .tbl {
-    height: 60vh;
-    overflow-y: scroll;
-    border-radius: 45px;
-    background: #61cfe7;
-    box-shadow: 5px 5px 10px #52b0c4, -5px -5px 10px #70eeff;
-}
-div#table_id_length, div#table_id_filter, div#table_id_info, div#table_id_paginate{
-	color: #fff;
-    padding: 3%;
-}
-.tbl th {
-    text-align: left;
-    color: #fff;
-    background: #10afc8;
+    box-shadow: 0 0 8px -5px #000;
+    background-color: #fff;
+    padding: 1em;
 }
 
 /* width */
@@ -49,4 +38,85 @@ div#table_id_length, div#table_id_filter, div#table_id_info, div#table_id_pagina
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #70eeff; 
+}
+
+div#table_id_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+div#table_id_length {
+    width: 50%;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+div#table_id_length select {
+    background: #10afc8;
+    color: #fff;
+    border: 0;
+    padding: 7px;
+    border-radius: 4px;
+}
+div#table_id_length select:focus{
+  outline: none;
+}
+div#table_id_filter {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+#table_id_filter label {
+    background: #10afc8;
+    color: #fff;
+    border-radius: 4px;
+}
+#table_id_filter label input{
+    padding: 0.5em;
+    border: 1px solid #b9b9b9;
+    color: #10afc8;
+}
+input:focus{
+  outline: none;
+}
+table#table_id {
+    width: 100%;
+    margin: 1em 0;
+}
+table tr{
+  transition: 0.5s;
+}
+table#table_id th{
+  text-align: left;
+  font-size: 1.2em
+}
+
+table#table_id td, table#table_id th{
+  padding: 0.4em 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+table#table_id tr:hover{
+  background-color: #eee;
+}
+
+table#table_id td a{
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #10afc8;
+  color: #fff;
+}
+div#table_id_info {
+    width: 100%;
+    text-align: center;
+}
+div#table_id_paginate {
+    width: 100%;
+    text-align: center;
+}
+a.paginate_button {
+    display: inline-block;
+    padding: 0.5em;
 }
