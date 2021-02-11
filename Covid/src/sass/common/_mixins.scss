@@ -1,0 +1,68 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+//For Small
+@mixin sm {
+  @media screen and (min-width: ($sm)) {
+    @content;
+  }
+}
+
+//For Medium
+@mixin md {
+  @media screen and (min-width: ($md)) {
+    @content;
+  }
+}
+
+//For large
+@mixin lg {
+  @media screen and (min-width: ($lg)) {
+    @content;
+  }
+}
+
+//For Extra Large
+@mixin xl {
+  @media screen and (min-width: ($xl)) {
+    @content;
+  }
+}
+
+//For Extra Extra Large
+@mixin xxl {
+  @media screen and (min-width: ($xxl)) {
+    @content;
+  }
+}
+
+//Flexboxes
+@mixin flexer($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin full-flexer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Buttons
+@mixin btn {
+  padding: 0.5em 1em;
+  border-radius: 24px;
+}
+//Primary Button
+@mixin primary-btn {
+  background-color: $primary-color-low;
+  color: $primary-color;
+}
+//Secondary Button
+@mixin secondary-btn {
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+}
