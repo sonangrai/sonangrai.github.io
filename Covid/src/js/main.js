@@ -48,3 +48,8 @@ window.addEventListener("scroll", () => {
   }
   lastScrollTop = st;
 });
+
+//Date to footer
+var datebox = document.querySelector("#date");
+var year = new Date().getFullYear();
+datebox.innerHTML = year;

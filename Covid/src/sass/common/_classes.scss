@@ -100,4 +100,29 @@
     width: 50px;
     bottom: 0;
   }
+  .lf {
+    width: 50px;
+    top: 20%;
+    left: calc(((100% - 76%) / 2) - 50px);
+  }
+}
+
+//Title bar
+.title__bar {
+  padding: 1em 0;
+  text-align: center;
+  h3 {
+    color: $primary-color;
+    font-family: $font-redhat;
+    font-size: $small-font;
+  }
+  h2 {
+    color: $secondary-color;
+    font-family: $font-redhat;
+    font-size: $medium-font;
+  }
+  p {
+    color: $secondary-color;
+    font-size: $small-font;
+  }
 }

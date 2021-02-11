@@ -25,3 +25,106 @@
     }
   }
 }
+
+//Contag
+#contagion {
+  .wrapper {
+    width: 76%;
+    .contag__row {
+      @include full-flexer;
+      .contag__card {
+        text-align: center;
+        width: 100%;
+        padding: 1em;
+        border-radius: $radius;
+        box-shadow: $box-shadow;
+        margin-bottom: 1em;
+        transition: 0.3s;
+        img {
+          width: 60%;
+        }
+        .info {
+          h3 {
+            font-size: $medium-font;
+            color: $secondary-color;
+          }
+          p {
+            font-size: $small-font;
+          }
+        }
+        &:hover {
+          border-bottom: 4px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+
+//Footer
+footer {
+  .foot__box {
+    text-align: center;
+    .logo {
+      @include flexer(center, center);
+      span {
+        font-family: $font-redhat;
+        text-transform: uppercase;
+        font-size: $medium-font;
+        font-weight: $heavy-font;
+        color: $secondary-color;
+      }
+      img {
+        width: 30px;
+        margin-right: 0.5em;
+      }
+    }
+    .foot__menu {
+      @include flexer(center, center);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0 0.5em;
+        a {
+          font-size: $smaller-font;
+          text-decoration: none;
+        }
+      }
+    }
+    p {
+      font-size: $smaller-font;
+    }
+  }
+}
+
+//Subscription
+.subscription {
+  h2 {
+    text-align: center;
+    color: $secondary-color;
+    font-size: $medium-font;
+    font-weight: $heavy-font;
+  }
+  .form__inline {
+    border-radius: 24px;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.6em;
+    box-shadow: $box-shadow;
+    form {
+      @include full-flexer;
+      input[type="text"] {
+        width: 70%;
+        border: 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        width: 30%;
+        border: 0;
+      }
+    }
+  }
+}
