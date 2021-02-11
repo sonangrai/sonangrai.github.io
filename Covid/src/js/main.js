@@ -30,3 +30,21 @@ menuicon.addEventListener("click", () => {
   }
   clickcnt++;
 });
+
+/*
+  Sticky menu
+*/
+var lastScrollTop = 0;
+var header = document.getElementsByTagName("header")[0];
+window.addEventListener("scroll", () => {
+  var st = document.documentElement.scrollTop;
+  if (st > lastScrollTop) {
+    header.classList.remove("stickymenu");
+  } else if (st == 0) {
+    header.classList.remove("stickymenu");
+  } else {
+    // upscroll code
+    header.classList.add("stickymenu");
+  }
+  lastScrollTop = st;
+});

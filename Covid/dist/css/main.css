@@ -3,6 +3,38 @@
   width: 94%;
   margin: 0 auto; }
 
+.btn {
+  padding: 0.2em 0.5em;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 0.8em; }
+
+.primary-btn {
+  background-color: #fa565247;
+  color: #fa5652;
+  transition: 0.5s; }
+  .primary-btn:hover {
+    background-color: #fa5652;
+    color: #fff; }
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #fa5652;
+  color: #fa5652;
+  transition: 0.5s; }
+  .secondary-btn:hover {
+    background-color: #fa5652;
+    color: #fff; }
+
+.stickymenu {
+  background-color: #fff;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+
 .mobile__menu {
   position: fixed;
   padding: 2em;
@@ -11,15 +43,18 @@
   height: 100vh;
   width: 80vw;
   transition: 0.3s ease-in;
-  background-color: #fa5652; }
+  background-color: #fa5652;
+  z-index: 10; }
   .mobile__menu .mobile__menu__lists {
     padding: 0;
     margin: 0;
     list-style: none; }
-    .mobile__menu .mobile__menu__lists .mobile__menu__item a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600; }
+    .mobile__menu .mobile__menu__lists .mobile__menu__item {
+      margin: 1em 0; }
+      .mobile__menu .mobile__menu__lists .mobile__menu__item a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600; }
     .mobile__menu .mobile__menu__lists .mobile__menu__item.active a {
       color: #035755;
       display: inline-block;
@@ -34,8 +69,19 @@
         border-radius: 50%;
         background-color: #035755; }
 
+.section__box {
+  padding: 0.5em 0;
+  position: relative; }
+  .section__box .floater {
+    position: absolute; }
+  .section__box .rt {
+    right: 0;
+    width: 50px;
+    bottom: 0; }
+
 header {
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  transition: 0.5s; }
   header .header__row {
     display: flex;
     flex-wrap: wrap; }
@@ -81,6 +127,26 @@ header {
         width: 16px; }
       header .header__row .menu__part .tog span:nth-child(2) {
         transform: rotate(34deg); }
+
+.banner__row {
+  display: flex;
+  flex-wrap: wrap; }
+  .banner__row .illus__part {
+    width: 100%; }
+    .banner__row .illus__part img {
+      width: 90%;
+      float: right; }
+  .banner__row .info__part h3 {
+    color: #fa5652;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.8em; }
+  .banner__row .info__part h2 {
+    color: #035755;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1em; }
+  .banner__row .info__part p {
+    color: #035755;
+    font-size: 0.8em; }
 
 html {
   scroll-behavior: smooth; }

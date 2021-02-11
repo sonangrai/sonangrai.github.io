@@ -49,20 +49,3 @@ $xxl: 1400px;
   display: flex;
   flex-wrap: wrap;
 }
-
-//Buttons
-@mixin btn {
-  padding: 0.5em 1em;
-  border-radius: 24px;
-}
-//Primary Button
-@mixin primary-btn {
-  background-color: $primary-color-low;
-  color: $primary-color;
-}
-//Secondary Button
-@mixin secondary-btn {
-  background-color: transparent;
-  border: 2px solid $primary-color;
-  color: $primary-color;
-}

@@ -1,6 +1,7 @@
 //Header
 header {
   padding: 0.5em 0;
+  transition: 0.5s;
   .header__row {
     @include full-flexer;
     .logo__part {
