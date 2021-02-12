@@ -2,12 +2,21 @@
 .wrapper {
   width: 94%;
   margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 84%; } }
 
 .btn {
   padding: 0.2em 0.5em;
   border-radius: 24px;
   text-decoration: none;
   font-size: 0.8em; }
+  @media screen and (min-width: 768px) {
+    .btn {
+      padding: 0.4em 0.8em; } }
+  @media screen and (min-width: 992px) {
+    .btn {
+      padding: 0.5em 1em; } }
 
 .primary-btn {
   background-color: #fa565247;
@@ -34,6 +43,9 @@
   top: 0;
   left: 0;
   z-index: 9; }
+  @media screen and (min-width: 992px) {
+    .stickymenu {
+      padding: 0.4em 0; } }
 
 .mobile__menu {
   position: fixed;
@@ -82,6 +94,13 @@
     width: 50px;
     top: 20%;
     left: calc(((100% - 76%) / 2) - 50px); }
+  .section__box .big__v {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    @media screen and (min-width: 576px) {
+      .section__box .big__v {
+        width: 50%; } }
 
 .title__bar {
   padding: 1em 0;
@@ -90,13 +109,22 @@
     color: #fa5652;
     font-family: "Red Hat Display", sans-serif;
     font-size: 0.8em; }
+    @media screen and (min-width: 992px) {
+      .title__bar h3 {
+        font-size: 1em; } }
   .title__bar h2 {
     color: #035755;
     font-family: "Red Hat Display", sans-serif;
     font-size: 1em; }
+    @media screen and (min-width: 992px) {
+      .title__bar h2 {
+        font-size: 2em; } }
   .title__bar p {
     color: #035755;
     font-size: 0.8em; }
+    @media screen and (min-width: 992px) {
+      .title__bar p {
+        font-size: 1em; } }
 
 header {
   padding: 0.5em 0;
@@ -111,7 +139,8 @@ header {
         header .header__row .logo__part a .logo {
           display: flex;
           justify-content: unset;
-          align-items: center; }
+          align-items: center;
+          height: 100%; }
           header .header__row .logo__part a .logo span {
             font-family: "Red Hat Display", sans-serif;
             text-transform: uppercase;
@@ -121,6 +150,9 @@ header {
           header .header__row .logo__part a .logo img {
             width: 30px;
             margin-right: 0.5em; }
+            @media screen and (min-width: 992px) {
+              header .header__row .logo__part a .logo img {
+                width: 50px; } }
     header .header__row .menu__part {
       width: 50%;
       display: flex;
@@ -139,6 +171,9 @@ header {
           margin-bottom: 0.4em; }
         header .header__row .menu__part .mobile__nav span:nth-child(3) {
           width: 24px; }
+      @media screen and (min-width: 768px) {
+        header .header__row .menu__part .mobile__nav {
+          display: none; } }
       header .header__row .menu__part .tog span:nth-child(3) {
         display: none; }
       header .header__row .menu__part .tog span:nth-child(1) {
@@ -146,26 +181,85 @@ header {
         width: 16px; }
       header .header__row .menu__part .tog span:nth-child(2) {
         transform: rotate(34deg); }
+      header .header__row .menu__part .big__nav {
+        display: none; }
+        header .header__row .menu__part .big__nav .big__menus {
+          display: flex;
+          justify-content: unset;
+          align-items: center;
+          height: 100%;
+          list-style: none; }
+          header .header__row .menu__part .big__nav .big__menus .big__menu__item {
+            margin-left: 1.8em; }
+            header .header__row .menu__part .big__nav .big__menus .big__menu__item a {
+              text-decoration: none;
+              font-weight: 600;
+              color: #035755; }
+            header .header__row .menu__part .big__nav .big__menus .big__menu__item:last-child a {
+              color: #fa5652; }
+          header .header__row .menu__part .big__nav .big__menus .big__menu__item.active a {
+            color: #fa5652;
+            display: inline-block;
+            position: relative; }
+            header .header__row .menu__part .big__nav .big__menus .big__menu__item.active a:after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 102%;
+              height: 0.2em;
+              width: 0.2em;
+              border-radius: 50%;
+              background-color: #fa5652; }
+        @media screen and (min-width: 768px) {
+          header .header__row .menu__part .big__nav {
+            display: block; } }
 
 .banner__row {
   display: flex;
   flex-wrap: wrap; }
+  @media screen and (min-width: 576px) {
+    .banner__row {
+      margin-bottom: 1em; }
+      .banner__row:last-child {
+        margin-bottom: 0; } }
+  @media screen and (min-width: 768px) {
+    .banner__row {
+      align-items: center; } }
   .banner__row .illus__part {
     width: 100%; }
+    @media screen and (min-width: 576px) {
+      .banner__row .illus__part {
+        width: 50%; } }
     .banner__row .illus__part img {
-      width: 90%;
-      float: right; }
+      width: 80%;
+      display: block;
+      margin: 0 auto; }
+  @media screen and (min-width: 576px) {
+    .banner__row .info__part {
+      width: 50%; } }
   .banner__row .info__part h3 {
     color: #fa5652;
     font-family: "Red Hat Display", sans-serif;
     font-size: 0.8em; }
+    @media screen and (min-width: 992px) {
+      .banner__row .info__part h3 {
+        font-size: 1em; } }
   .banner__row .info__part h2 {
     color: #035755;
     font-family: "Red Hat Display", sans-serif;
     font-size: 1em; }
+    @media screen and (min-width: 992px) {
+      .banner__row .info__part h2 {
+        font-size: 2em; } }
   .banner__row .info__part p {
     color: #035755;
     font-size: 0.8em; }
+    @media screen and (min-width: 992px) {
+      .banner__row .info__part p {
+        font-size: 1em; } }
+  @media screen and (min-width: 576px) {
+    .banner__row:nth-child(odd) {
+      flex-direction: row-reverse; } }
 
 #contagion .wrapper {
   width: 76%; }
@@ -180,51 +274,98 @@ header {
       box-shadow: 0px 0px 4px 0px #00000038;
       margin-bottom: 1em;
       transition: 0.3s; }
+      @media screen and (min-width: 576px) {
+        #contagion .wrapper .contag__row .contag__card {
+          width: 48%;
+          margin-right: calc(100% - (48% * 2)); }
+          #contagion .wrapper .contag__row .contag__card:nth-child(even) {
+            margin-right: 0; } }
+      @media screen and (min-width: 768px) {
+        #contagion .wrapper .contag__row .contag__card {
+          width: 30%;
+          margin-right: calc((100% - (30% * 3)) / 3); }
+          #contagion .wrapper .contag__row .contag__card:nth-child(even) {
+            margin-right: calc((100% - (30% * 3)) / 3); }
+          #contagion .wrapper .contag__row .contag__card:nth-child(3n + 0) {
+            margin-right: 0; } }
       #contagion .wrapper .contag__row .contag__card img {
         width: 60%; }
       #contagion .wrapper .contag__row .contag__card .info h3 {
         font-size: 1em;
         color: #035755; }
+        @media screen and (min-width: 992px) {
+          #contagion .wrapper .contag__row .contag__card .info h3 {
+            font-size: 2em; } }
       #contagion .wrapper .contag__row .contag__card .info p {
         font-size: 0.8em; }
+        @media screen and (min-width: 992px) {
+          #contagion .wrapper .contag__row .contag__card .info p {
+            font-size: 1em; } }
       #contagion .wrapper .contag__row .contag__card:hover {
         border-bottom: 4px solid #fa5652; }
 
-footer .foot__box {
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 2em 0 !important; } }
+
+@media screen and (min-width: 992px) {
+  footer .foot__row {
+    display: flex;
+    flex-wrap: wrap; } }
+
+footer .foot__row .foot__box {
   text-align: center; }
-  footer .foot__box .logo {
+  footer .foot__row .foot__box .logo {
     display: flex;
     justify-content: center;
-    align-items: center; }
-    footer .foot__box .logo span {
+    align-items: center;
+    height: 100%; }
+    footer .foot__row .foot__box .logo span {
       font-family: "Red Hat Display", sans-serif;
       text-transform: uppercase;
       font-size: 1em;
       font-weight: 600;
       color: #035755; }
-    footer .foot__box .logo img {
+    footer .foot__row .foot__box .logo img {
       width: 30px;
       margin-right: 0.5em; }
-  footer .foot__box .foot__menu {
+  footer .foot__row .foot__box .foot__menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     margin: 0;
     padding: 0;
     list-style: none; }
-    footer .foot__box .foot__menu li {
+    footer .foot__row .foot__box .foot__menu li {
       margin: 0 0.5em; }
-      footer .foot__box .foot__menu li a {
+      footer .foot__row .foot__box .foot__menu li a {
         font-size: 0.5em;
         text-decoration: none; }
-  footer .foot__box p {
+        @media screen and (min-width: 992px) {
+          footer .foot__row .foot__box .foot__menu li a {
+            font-size: 0.8em; } }
+  footer .foot__row .foot__box p {
     font-size: 0.5em; }
+    @media screen and (min-width: 992px) {
+      footer .foot__row .foot__box p {
+        font-size: 0.8em; } }
+  @media screen and (min-width: 992px) {
+    footer .foot__row .foot__box:nth-child(1) {
+      width: 15%; }
+    footer .foot__row .foot__box:nth-child(3) {
+      width: 25%; }
+    footer .foot__row .foot__box:nth-child(2) {
+      width: 60%; } }
 
 .subscription h2 {
   text-align: center;
   color: #035755;
   font-size: 1em;
   font-weight: 600; }
+  @media screen and (min-width: 992px) {
+    .subscription h2 {
+      font-size: 2em; } }
 
 .subscription .form__inline {
   border-radius: 24px;
@@ -244,6 +385,66 @@ footer .foot__box {
     .subscription .form__inline form input[type="submit"] {
       width: 30%;
       border: 0; }
+      @media screen and (min-width: 992px) {
+        .subscription .form__inline form input[type="submit"] {
+          font-size: 1em; } }
+
+#prevention .prev__box .prev__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 992px) {
+    #prevention .prev__box .prev__item {
+      align-items: center; } }
+  #prevention .prev__box .prev__item:last-child {
+    margin-bottom: 0; }
+  @media screen and (min-width: 576px) {
+    #prevention .prev__box .prev__item:nth-child(even) {
+      flex-direction: row-reverse; } }
+  #prevention .prev__box .prev__item .img__part img {
+    width: 40%;
+    margin: 0 auto;
+    display: block; }
+    @media screen and (min-width: 576px) {
+      #prevention .prev__box .prev__item .img__part img {
+        width: 80%; } }
+  @media screen and (min-width: 576px) {
+    #prevention .prev__box .prev__item .img__part {
+      width: 50%; } }
+  #prevention .prev__box .prev__item .desc__part {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em; }
+    #prevention .prev__box .prev__item .desc__part .numer {
+      width: 20%; }
+      #prevention .prev__box .prev__item .desc__part .numer span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fa55525b;
+        color: #fa5652;
+        font-weight: 600;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%; }
+    #prevention .prev__box .prev__item .desc__part .paro {
+      width: 80%; }
+      #prevention .prev__box .prev__item .desc__part .paro h3 {
+        color: #035755;
+        font-family: "Red Hat Display", sans-serif;
+        margin: 0;
+        font-size: 1em; }
+        @media screen and (min-width: 992px) {
+          #prevention .prev__box .prev__item .desc__part .paro h3 {
+            font-size: 2em; } }
+      #prevention .prev__box .prev__item .desc__part .paro p {
+        font-size: 0.8em; }
+        @media screen and (min-width: 992px) {
+          #prevention .prev__box .prev__item .desc__part .paro p {
+            font-size: 1em; } }
+    @media screen and (min-width: 576px) {
+      #prevention .prev__box .prev__item .desc__part {
+        width: 50%; } }
 
 html {
   scroll-behavior: smooth; }

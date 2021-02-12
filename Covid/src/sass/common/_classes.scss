@@ -2,6 +2,9 @@
 .wrapper {
   width: 94%;
   margin: 0 auto;
+  @include md {
+    width: 84%;
+  }
 }
 
 //Buttons
@@ -10,6 +13,13 @@
   border-radius: 24px;
   text-decoration: none;
   font-size: $small-font;
+  @include md {
+    padding: 0.4em 0.8em;
+  }
+
+  @include lg {
+    padding: 0.5em 1em;
+  }
 }
 //Primary Button
 .primary-btn {
@@ -42,6 +52,9 @@
   top: 0;
   left: 0;
   z-index: 9;
+  @include lg {
+    padding: 0.4em 0;
+  }
 }
 
 //Mobile Menu box
@@ -105,6 +118,14 @@
     top: 20%;
     left: calc(((100% - 76%) / 2) - 50px);
   }
+  .big__v {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include sm {
+      width: 50%;
+    }
+  }
 }
 
 //Title bar
@@ -115,14 +136,23 @@
     color: $primary-color;
     font-family: $font-redhat;
     font-size: $small-font;
+    @include lg {
+      font-size: $medium-font;
+    }
   }
   h2 {
     color: $secondary-color;
     font-family: $font-redhat;
     font-size: $medium-font;
+    @include lg {
+      font-size: $large-font;
+    }
   }
   p {
     color: $secondary-color;
     font-size: $small-font;
+    @include lg {
+      font-size: $medium-font;
+    }
   }
 }

@@ -13,6 +13,22 @@ allmobilemenu.forEach((a, i) => {
     allmobilemenu[i].classList.add("active");
   });
 });
+var currentactive2 = document.querySelector(".big__menu__item.active");
+var allmobilemenu2 = document.querySelectorAll(".big__menu__item");
+//Looping Throught the all menu items
+allmobilemenu2.forEach((a, i) => {
+  allmobilemenu2[i].addEventListener("click", () => {
+    //Removing Current Active
+    currentactive2.classList.remove("active");
+    //Setting New Active
+    currentactive2 = allmobilemenu2[i];
+    allmobilemenu2[i].classList.add("active");
+  });
+});
+
+/*
+  Making the active getting postion
+*/
 
 /* 
     Mobile menu toggle

@@ -10,6 +10,7 @@ header {
         text-decoration: none;
         .logo {
           @include flexer(unset, center);
+          height: 100%;
           span {
             font-family: $font-redhat;
             text-transform: uppercase;
@@ -20,6 +21,9 @@ header {
           img {
             width: 30px;
             margin-right: 0.5em;
+            @include lg {
+              width: 50px;
+            }
           }
         }
       }
@@ -45,6 +49,9 @@ header {
             width: 24px;
           }
         }
+        @include md {
+          display: none;
+        }
       }
       .tog {
         span {
@@ -58,6 +65,47 @@ header {
           &:nth-child(2) {
             transform: rotate(34deg);
           }
+        }
+      }
+      .big__nav {
+        display: none;
+        .big__menus {
+          @include flexer(unset, center);
+          height: 100%;
+          list-style: none;
+          .big__menu__item {
+            margin-left: 1.8em;
+            a {
+              text-decoration: none;
+              font-weight: $heavy-font;
+              color: $secondary-color;
+            }
+            &:last-child {
+              a {
+                color: $primary-color;
+              }
+            }
+          }
+          .big__menu__item.active {
+            a {
+              color: $primary-color;
+              display: inline-block;
+              position: relative;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 102%;
+                height: 0.2em;
+                width: 0.2em;
+                border-radius: 50%;
+                background-color: $primary-color;
+              }
+            }
+          }
+        }
+        @include md {
+          display: block;
         }
       }
     }

@@ -1,27 +1,57 @@
 //Banner
 .banner__row {
   @include full-flexer;
+  @include sm {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include md {
+    align-items: center;
+  }
   .illus__part {
     width: 100%;
+    @include sm {
+      width: 50%;
+    }
     img {
-      width: 90%;
-      float: right;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
     }
   }
   .info__part {
+    @include sm {
+      width: 50%;
+    }
     h3 {
       color: $primary-color;
       font-family: $font-redhat;
       font-size: $small-font;
+      @include lg {
+        font-size: $medium-font;
+      }
     }
     h2 {
       color: $secondary-color;
       font-family: $font-redhat;
       font-size: $medium-font;
+      @include lg {
+        font-size: $large-font;
+      }
     }
     p {
       color: $secondary-color;
       font-size: $small-font;
+      @include lg {
+        font-size: $medium-font;
+      }
+    }
+  }
+  @include sm {
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
     }
   }
 }
@@ -40,6 +70,23 @@
         box-shadow: $box-shadow;
         margin-bottom: 1em;
         transition: 0.3s;
+        @include sm {
+          width: 48%;
+          margin-right: calc(100% - (48% * 2));
+          &:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+        @include md {
+          width: 30%;
+          margin-right: calc((100% - (30% * 3)) / 3);
+          &:nth-child(even) {
+            margin-right: calc((100% - (30% * 3)) / 3);
+          }
+          &:nth-child(3n + 0) {
+            margin-right: 0;
+          }
+        }
         img {
           width: 60%;
         }
@@ -47,9 +94,15 @@
           h3 {
             font-size: $medium-font;
             color: $secondary-color;
+            @include lg {
+              font-size: $large-font;
+            }
           }
           p {
             font-size: $small-font;
+            @include lg {
+              font-size: $medium-font;
+            }
           }
         }
         &:hover {
@@ -62,37 +115,64 @@
 
 //Footer
 footer {
-  .foot__box {
-    text-align: center;
-    .logo {
-      @include flexer(center, center);
-      span {
-        font-family: $font-redhat;
-        text-transform: uppercase;
-        font-size: $medium-font;
-        font-weight: $heavy-font;
-        color: $secondary-color;
-      }
-      img {
-        width: 30px;
-        margin-right: 0.5em;
-      }
+  @include lg {
+    padding: 2em 0 !important;
+  }
+  .foot__row {
+    @include lg {
+      @include full-flexer;
     }
-    .foot__menu {
-      @include flexer(center, center);
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      li {
-        margin: 0 0.5em;
-        a {
-          font-size: $smaller-font;
-          text-decoration: none;
+    .foot__box {
+      text-align: center;
+      .logo {
+        @include flexer(center, center);
+        height: 100%;
+        span {
+          font-family: $font-redhat;
+          text-transform: uppercase;
+          font-size: $medium-font;
+          font-weight: $heavy-font;
+          color: $secondary-color;
+        }
+        img {
+          width: 30px;
+          margin-right: 0.5em;
         }
       }
-    }
-    p {
-      font-size: $smaller-font;
+      .foot__menu {
+        @include flexer(center, center);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin: 0 0.5em;
+          a {
+            font-size: $smaller-font;
+            text-decoration: none;
+            @include lg {
+              font-size: $small-font;
+            }
+          }
+        }
+      }
+      p {
+        font-size: $smaller-font;
+        @include lg {
+          font-size: $small-font;
+        }
+      }
+      @include lg {
+        &:nth-child(1) {
+          width: 15%;
+        }
+        &:nth-child(3) {
+          width: 25%;
+        }
+        &:nth-child(2) {
+          width: 60%;
+        }
+      }
     }
   }
 }
@@ -104,6 +184,9 @@ footer {
     color: $secondary-color;
     font-size: $medium-font;
     font-weight: $heavy-font;
+    @include lg {
+      font-size: $large-font;
+    }
   }
   .form__inline {
     border-radius: 24px;
@@ -124,6 +207,82 @@ footer {
       input[type="submit"] {
         width: 30%;
         border: 0;
+        @include lg {
+          font-size: $medium-font;
+        }
+      }
+    }
+  }
+}
+
+//Prevention
+#prevention {
+  .prev__box {
+    .prev__item {
+      @include full-flexer;
+      margin-bottom: 1em;
+      @include lg {
+        align-items: center;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include sm {
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+      .img__part {
+        img {
+          width: 40%;
+          margin: 0 auto;
+          display: block;
+          @include sm {
+            width: 80%;
+          }
+        }
+        @include sm {
+          width: 50%;
+        }
+      }
+      .desc__part {
+        @include full-flexer;
+        margin-top: 0.5em;
+        .numer {
+          width: 20%;
+          span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color2;
+            color: $primary-color;
+            font-weight: $heavy-font;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+          }
+        }
+        .paro {
+          width: 80%;
+          h3 {
+            color: $secondary-color;
+            font-family: $font-redhat;
+            margin: 0;
+            font-size: $medium-font;
+            @include lg {
+              font-size: $large-font;
+            }
+          }
+          p {
+            font-size: $small-font;
+            @include lg {
+              font-size: $medium-font;
+            }
+          }
+        }
+        @include sm {
+          width: 50%;
+        }
       }
     }
   }
