@@ -1,7 +1,7 @@
 /*
     For Mobile Menu Changing active on click
 */
-var currentactive = document.querySelector(".mobile__menu__item.active");
+var currentactive = document.querySelector(".mobile__menu__item > .active");
 var allmobilemenu = document.querySelectorAll(".mobile__menu__item");
 //Looping Throught the all menu items
 allmobilemenu.forEach((a, i) => {
@@ -29,6 +29,26 @@ allmobilemenu2.forEach((a, i) => {
 /*
   Making the active getting postion
 */
+var sections = document.querySelectorAll(
+  "#overview,#contagion,#symptoms,#prevention"
+);
+window.addEventListener("scroll", () => {
+  //The scroll event
+  var scrollposition = document.documentElement.scrollTop; //Parent top Position
+  sections.forEach((a) => {
+    var currentlink = a.id;
+    var ref = document.getElementById(currentlink).getBoundingClientRect(); //Finding all roperty of current active
+    if (ref.top <= scrollposition && ref.top + ref.height > scrollposition) {
+      var newitem = document.querySelectorAll(".big__menu__item > a");
+      newitem.forEach((ne) => {
+        ne.parentElement.classList.remove("active");
+        if (ne.href.indexOf(a.id) !== -1) {
+          ne.parentNode.classList.add("active");
+        }
+      });
+    }
+  });
+});
 
 /* 
     Mobile menu toggle
