@@ -1,0 +1,189 @@
+footer {
+  .top__foot {
+    background-color: $foot-black;
+    border-bottom: 1px solid #222;
+    padding: 2em 0;
+    .foot__item {
+      @include flexer(flex-end, flex-start);
+      flex-direction: column;
+      height: 100%;
+      .contants {
+        svg {
+          margin-bottom: 1em;
+        }
+        p {
+          color: #fff;
+          font-size: $medium-font;
+          margin: 1em 0;
+          br {
+            margin-bottom: 1em;
+            display: block;
+          }
+        }
+        .foot__title {
+          h3 {
+            display: inline-block;
+            padding-bottom: 0.5em;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: $large-font;
+            border-bottom: 3px solid $foot-grey;
+          }
+        }
+        ul {
+          @include flex-menu;
+          margin-top: 3em;
+          li {
+            margin-right: 1em;
+            &:last-child {
+              margin-right: 0;
+            }
+            a {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: $foot-grey;
+              @include flexer(center, center);
+              display: inline-flex !important;
+              svg {
+                fill: #fff;
+                width: 20px;
+                height: 20px;
+                margin: 0;
+              }
+            }
+          }
+        }
+        form {
+          width: 80%;
+          .inline__form {
+            border: 1px solid $foot-grey;
+            border-radius: 32px;
+            display: flex;
+            padding: 0.4em;
+            width: 100%;
+            flex-wrap: wrap;
+            input {
+              flex-grow: 2;
+              background-color: transparent;
+              border: 0;
+              color: #fff;
+              display: block;
+              padding: 0 0.4em;
+              &:focus {
+                outline: none;
+              }
+              width: 70%;
+            }
+            button {
+              background-color: $primary-color;
+              border-radius: 24px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 20%;
+              padding: 0.4em;
+              border: 0;
+              &:focus {
+                outline: none;
+              }
+              svg {
+                margin-bottom: 0;
+              }
+            }
+          }
+          @include sm {
+            width: 100%;
+          }
+        }
+      }
+      @include lg {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .bottom__foot {
+    background-color: $foot-grey;
+    padding: 2em 0;
+    .bt__row {
+      display: flex;
+      justify-content: space-between;
+      @include xl {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+      }
+      .copy {
+        h4 {
+          font-size: $small-font;
+          color: #fff;
+          margin: 0;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+        @include xxl {
+          width: 100%;
+          text-align: center;
+          margin-top: 1em;
+        }
+      }
+      .bt__menu {
+        ul {
+          @include flex-menu;
+          li {
+            margin-left: 3em;
+            position: relative;
+            &:first-child {
+              margin-left: 0;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              left: calc((-1.5em) - 6px);
+              top: 50%;
+              transform: translateY(-50%);
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color: #fff;
+              @include md {
+                left: calc((-0.5em) - 4px);
+                height: 4px;
+                width: 4px;
+                transform: translateY(0);
+              }
+              @include xsm {
+                display: none;
+              }
+            }
+            &:first-child:before {
+              content: none;
+            }
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-size: $small-font;
+            }
+            @include md {
+              margin-left: 1em;
+            }
+            @include xsm {
+              display: block;
+            }
+          }
+          @include xsm {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+        @include xxl {
+          width: 100%;
+          text-align: center;
+          display: inline-flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

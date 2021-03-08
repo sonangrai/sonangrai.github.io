@@ -1,0 +1,243 @@
+{% extends 'layout/_layout.twig' %} {% block title %} About Us - TrustGenic {%
+endblock %} {% block stylesheets %} {% endblock %} {% block javascripts %} {%
+endblock %} {% block contents %}
+
+<!-- Contact Section Start -->
+<section class="aboutus">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-12">
+        <div class="head__title">
+          <h3>About Us</h3>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="tabs__section">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="about-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#about"
+                type="button"
+                role="tab"
+                aria-controls="about"
+                aria-selected="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                >
+                  <g>
+                    <path
+                      d="m467 29.241h-422c-24.813 0-45 20.187-45 45v363.519c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-363.519c0-24.813-20.187-45-45-45zm-422 30h256.991v43.51h-271.991v-28.51c0-8.271 6.729-15 15-15zm437 378.518c0 8.271-6.729 15-15 15h-422c-8.271 0-15-6.729-15-15v-305.008h286.991c8.284 0 15-6.716 15-15v-58.51h135.009c8.271 0 15 6.729 15 15z"
+                    />
+                    <path
+                      d="m256 282.756h-15.001c-8.284 0-15 6.716-15 15s6.716 15 15 15l.001 35c0 8.284 6.716 15 15 15s15-6.716 15-15v-50c0-8.284-6.716-15-15-15z"
+                    />
+                    <path
+                      d="m254.001 162.753c-71.683 0-130.001 58.319-130.001 130.002 0 71.684 58.318 130.001 130.001 130.001s130.001-58.318 130.001-130.001c.001-71.683-58.317-130.002-130.001-130.002zm0 230.003c-55.141 0-100.001-44.859-100.001-100.001 0-55.141 44.86-100.002 100.001-100.002s100.001 44.86 100.001 100.002c.001 55.142-44.859 100.001-100.001 100.001z"
+                    />
+                    <circle cx="376.99" cy="102.75" r="15" />
+                    <circle cx="437" cy="102.75" r="15" />
+                    <circle cx="256" cy="237.75" r="15" />
+                  </g>
+                </svg>
+                About
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="history-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#history"
+                type="button"
+                role="tab"
+                aria-controls="history"
+                aria-selected="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                >
+                  <g>
+                    <path
+                      d="m276 138v109.716l72.809 72.809c7.811 7.811 7.811 20.474 0 28.284-7.811 7.811-20.474 7.81-28.284 0l-78.667-78.667c-3.751-3.75-5.858-8.838-5.858-14.142v-118c0-11.046 8.954-20 20-20s20 8.954 20 20zm58.667-138h-157.334c-41.89 0-83.217 14.722-116.284 43.478v-23.478c0-11.046-8.954-20-20-20s-20 8.954-20 20v78.667c0 11.046 9.031 20 20 20h78.667c11.046 0 20-8.954 20-20s-8.954-20-20-20h-37.833c25.314-24.405 59.485-38.667 95.45-38.667h157.333c75.727 0 137.334 61.607 137.334 137.333v157.333c0 75.727-61.607 137.334-137.333 137.334h-157.334c-75.726 0-137.333-61.607-137.333-137.333v-78.667c0-11.046-8.954-20-20-20s-20 8.954-20 20v78.667c0 97.782 79.551 177.333 177.333 177.333h157.333c97.783 0 177.334-79.551 177.334-177.333v-157.334c0-97.782-79.551-177.333-177.333-177.333z"
+                    />
+                  </g>
+                </svg>
+                Our History
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="mission-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#mission"
+                type="button"
+                role="tab"
+                aria-controls="mission"
+                aria-selected="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 301.055 301.055"
+                  style="enable-background: new 0 0 301.055 301.055"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M189.798,31.551c0-4.143-3.357-7.5-7.5-7.5h-79.453c-4.143,0-7.5,3.357-7.5,7.5v47.687c0,4.143,3.357,7.5,7.5,7.5h71.953  v21.186L102.845,179.9l-18.532-18.54c-1.571-1.571-3.769-2.362-5.97-2.168c-2.213,0.197-4.225,1.365-5.493,3.189L1.342,265.221  c-1.594,2.292-1.782,5.28-0.488,7.755c1.293,2.476,3.855,4.026,6.647,4.026h286.035c0.008,0.001,0.016,0.001,0.02,0  c4.143,0,7.5-3.357,7.5-7.5c0-1.783-0.622-3.421-1.661-4.708L189.798,108.66V31.551z M110.345,71.738V39.051h64.453v32.687H110.345z   M21.85,262.003l58.195-83.694l17.495,17.503c1.407,1.406,3.315,2.197,5.305,2.197c1.989,0,3.897-0.791,5.304-2.197l73.141-73.165  l97.818,139.357H21.85z"
+                  />
+                </svg>
+                Mission
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="vision-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#vision"
+                type="button"
+                role="tab"
+                aria-controls="vision"
+                aria-selected="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                >
+                  <g>
+                    <path
+                      d="m391 136c-47.82 0-89.191 28.12-108.461 68.689-7.446-5.457-16.62-8.689-26.539-8.689s-19.093 3.232-26.539 8.689c-19.27-40.569-60.641-68.689-108.461-68.689-66.72 0-121 53.832-121 120s54.28 120 121 120c66.168 0 120-53.832 120-120v-15c0-8.271 6.729-15 15-15s15 6.729 15 15v15c0 66.168 53.832 120 120 120 66.72 0 121-53.832 121-120s-54.28-120-121-120zm-270 210c-50.178 0-91-40.374-91-90 0-49.474 40.688-90 91-90 49.626 0 90 40.374 90 90 0 51.769-42.659 90-90 90zm270 0c-47.323 0-90-38.104-90-90 0-49.626 40.374-90 90-90 50.454 0 91 40.674 91 90 0 49.626-40.822 90-91 90z"
+                    />
+                  </g>
+                </svg>
+                Vision
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="about"
+            role="tabpanel"
+            aria-labelledby="about-tab"
+          >
+            <div class="contents">
+              <p>
+                Trust Genic Document Clearing Services is based in Dubai, the
+                United Arab Emirates which is well connected with public
+                transports and roads. Our staff are well trained and speaks
+                multi-languages including English, Hindi and Arabic, we can
+                assist people from any countries in the world by using official
+                interpreter and translator wherever is required during the
+                initial stage of the communication. Although we are based in
+                Dubai, we can assist you for the company set up in any of the
+                emirates of United Arab Emirates and Europe through our
+                associated partners and collaborated companies. We are very
+                flexible to fix an appointment with clients for the further
+                discussions in any Emirates of United Arab Emirates or in our
+                office whichever is easier and more convenient for our clients.
+                <br />
+
+                Our company got good banking relationships with major banks and
+                financial establishments in United Arab Emirates and we can
+                present and advise you the better choices for the company
+                account as per your proposed activity and services.<br />
+
+                <img src="./img/02.jpg" alt="" />
+
+                We guide and assist individual and companies to open a new
+                company based on their own requirements. The Trust Genic
+                Management Consultancy offers a full range of services including
+                company formation, office spaces, opening of bank account,
+                searching of office spaces on mainland and post incorporation
+                consulting services as wells.
+              </p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show"
+            id="history"
+            role="tabpanel"
+            aria-labelledby="history-tab"
+          >
+            <div class="contents">
+              <p>
+                Trust Genic was established on January 2017 as Trust Genic
+                Management Consultancy in Ajman. Considering the client
+                convenience and easy accessibility we are proud to state that we
+                moved to the heart of Dubai in Bur-Dubai . Even though we are
+                new ,but in this short span of time we succeed to have 200 happy
+                clients and more to add . Trust Genic is registered as a channel
+                partner with more than Ten Leading Free Zones of the UAE. Trust
+                Genic also has good relation with all the government bodies
+                which help to Setup Business fast, smart and in an effective
+                way.
+              </p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="mission"
+            role="tabpanel"
+            aria-labelledby="mission-tab"
+          >
+            <div class="contents">
+              <img src="./img/mission.png" alt="" />
+              <p>
+                Provide excellent customer service by experienced team and offer
+                a full range of services including company formation, office
+                spaces, opening of bank account, searching for office spaces on
+                the mainland and post incorporation consulting services as well.
+              </p>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="vision"
+            role="tabpanel"
+            aria-labelledby="vision-tab"
+          >
+            <div class="contents">
+              <p>
+                Create flexible environment to setup business based on the
+                client's requirement. Develop a community of potential
+                Entrepreneurs and succeed them to start their business IN THE
+                LAND OF OPPORTUNITY – UAE , and reach their business goal by
+                providing right instructions for business setup and Business
+                Development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+section.contact {
+  .map {
+    position: relative;
+    iframe {
+      height: 500px;
+    }
+    .contact__form {
+      @include flexer(flex-start, center);
+      background-color: $primary-color;
+      padding: 3em;
+      position: absolute;
+      right: 5%;
+      bottom: -5%;
+      height: 100%;
+      width: 500px;
+      @include xl {
+        width: 400px;
+        padding: 2em;
+      }
+      @include lg {
+        position: unset;
+        width: 100%;
+      }
+      .packer {
+        width: 100%;
+        h3 {
+          display: inline-block;
+          color: #fff;
+          font-size: $large-font;
+          padding-bottom: 0.5em;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            width: 40%;
+            height: 1px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+          }
+          @include lg {
+            font-size: $large-font;
+          }
+        }
+        form {
+          .form__flex.form__item {
+            @include full-flexer;
+            justify-content: space-between;
+            input {
+              width: 48%;
+            }
+          }
+          .form__item {
+            padding: 0.8em;
+            margin-bottom: 1em;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            input,
+            textarea {
+              border: 0;
+              width: 100%;
+              padding: 0.8em;
+              background-color: transparent;
+              border-bottom: 1px solid $secondary-color4;
+              transition: 0.3s;
+              color: #fff;
+              &::placeholder {
+                color: #fff;
+              }
+              &:focus {
+                outline: none;
+                border-bottom: 2px solid #fff;
+              }
+            }
+            button {
+              background-color: transparent;
+              color: #fff;
+              border-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact__info {
+    padding: 3em 0;
+    h3 {
+      font-size: $large-font;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: $medium-font;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        a {
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
