@@ -1462,6 +1462,26 @@
   </div>
 </section>
 
+<script>
+  var stik = document.querySelector(".stick_btn");
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500
+    ) {
+      stik.style.visibility = "visible";
+      stik.style.opacity = 1;
+    } else {
+      stik.style.visibility = "hidden";
+      stik.style.opacity = 0;
+    }
+  }
+</script>
+
  <!-- Companies Section -->
 <section class="companies">
   <div class="wrapper">
