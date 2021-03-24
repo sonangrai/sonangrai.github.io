@@ -7,12 +7,6 @@
     <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon" />
     <!-- CSS only -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -476,7 +470,7 @@
       <nav>
         <ul>
           <li>
-            <a href="./"> Home </a>
+            <a href="./" class="active"> Home </a>
           </li>
           <li>
             <a href="./careers">Careers</a>
@@ -496,70 +490,16 @@
         <div class="changable">
 
 <div class="contact__page">
+  <div class="page__titles">
+    <h2>Inquiry Us</h2>
+  </div>
   <div class="left__cont">
     <div class="upper">
-      <div class="page__titles">
-        <h2>Inquiry Us</h2>
-      </div>
       <p>Please go through FAQs to find instant guidance.</p>
     </div>
-    <div class="lower">
-      <ul>
-        <li>
-          <a href="tel:+9770123456">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 384 384"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M362.667,266.667c-26.56,0-52.267-4.267-76.16-12.16c-7.36-2.347-15.787-0.64-21.653,5.227l-46.933,47.04    c-60.48-30.72-109.867-80.107-140.587-140.48l46.933-47.147c5.867-5.867,7.573-14.293,5.227-21.653    c-7.893-23.893-12.16-49.6-12.16-76.16C117.333,9.493,107.84,0,96,0H21.333C9.6,0,0,9.493,0,21.333    C0,221.653,162.347,384,362.667,384c11.84,0,21.333-9.493,21.333-21.333V288C384,276.16,374.507,266.667,362.667,266.667z"
-                  />
-                </g>
-              </g>
-            </svg>
-            +977 01 000000
-          </a>
-        </li>
-        <li>
-          <a href="mailto:info@nchm.com.np">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 433.664 433.664"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M229.376,271.616c-4.096,2.56-8.704,3.584-12.8,3.584s-8.704-1.024-12.8-3.584L0,147.2v165.376c0,35.328,28.672,64,64,64    h305.664c35.328,0,64-28.672,64-64V147.2L229.376,271.616z"
-                  />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M369.664,57.088H64c-30.208,0-55.808,21.504-61.952,50.176l215.04,131.072l214.528-131.072    C425.472,78.592,399.872,57.088,369.664,57.088z"
-                  />
-                </g>
-              </g></svg
-            >info@nchm.com.np
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="right__cont">
-    <form onSubmit="{submit}">
-      <div class="form-item inline-form">
-        <div class="inline-item">
+    <div class="contact__form">
+      <form>
+        <div class="form-item">
           <input
             type="text"
             name="fullname"
@@ -567,7 +507,7 @@
             placeholder="Full Name"
           />
         </div>
-        <div class="inline-item">
+        <div class="form-item">
           <input
             type="email"
             name="email"
@@ -575,68 +515,175 @@
             placeholder="Email Address"
           />
         </div>
-      </div>
-      <div class="form-item">
-        <input
-          type="text"
-          name="contact"
-          id="name"
-          placeholder="Contact (Optional)"
-        />
-      </div>
-      <div class="form-item chev-parent">
-        <select name="inquert">
-          <option>Inquert Type</option>
-          <option>Ask</option>
-          <option>Business Query</option>
-        </select>
-        <i class="chev">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32.498"
-            height="20.096"
-            viewBox="0 0 32.498 20.096"
-          >
-            <path
-              id="Path_1555"
-              data-name="Path 1555"
-              d="M13629.462,190.221l-16.257,20.1-16.241-20.078Z"
-              transform="translate(-13596.964 -190.221)"
-              fill="#969696"
-            />
-          </svg>
-        </i>
-      </div>
-      <div class="form-item">
-        <textarea
-          name="message"
-          placeholder="Message Here"
-          value="{message}"
-          onChange="{onchange}"
-        ></textarea>
-      </div>
-      <div class="form-item">
-        <button type="submit">
-          Submit
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            id="Capa_1"
-            x="0px"
-            y="0px"
-            viewBox="0 0 448.011 448.011"
-          >
-            <g>
+        <div class="form-item">
+          <input
+            type="text"
+            name="contact"
+            id="name"
+            placeholder="Contact (Optional)"
+          />
+        </div>
+        <div class="form-item chev-parent">
+          <select name="inquert">
+            <option>Inquert Type</option>
+            <option>Ask</option>
+            <option>Business Query</option>
+          </select>
+          <i class="chev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32.498"
+              height="20.096"
+              viewBox="0 0 32.498 20.096"
+            >
+              <path
+                id="Path_1555"
+                data-name="Path 1555"
+                d="M13629.462,190.221l-16.257,20.1-16.241-20.078Z"
+                transform="translate(-13596.964 -190.221)"
+                fill="#969696"
+              />
+            </svg>
+          </i>
+        </div>
+        <div class="form-item">
+          <textarea
+            name="message"
+            placeholder="Message Here"
+            value="{message}"
+            onChange="{onchange}"
+          ></textarea>
+        </div>
+        <div class="form-item">
+          <button type="submit">
+            Submit
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 448.011 448.011"
+            >
               <g>
+                <g>
+                  <path
+                    d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4    l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472    l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="right__cont">
+    <div class="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.3687794899424!2d83.98569881496019!3d28.226484409092993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595ed870e6b5f%3A0x987b3c2b4183f0ef!2sNepal%20Tourism%20And%20Hotel%20Management%20College!5e0!3m2!1sen!2snp!4v1616568958372!5m2!1sen!2snp"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div class="infos">
+      <ul>
+        <li>
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23.325"
+              height="30"
+              viewBox="0 0 23.325 30"
+            >
+              <g
+                id="Group_26"
+                data-name="Group 26"
+                transform="translate(-1148 -3172.287)"
+              >
+                <g id="Group_24" data-name="Group 24">
+                  <path
+                    id="Path_40"
+                    data-name="Path 40"
+                    d="M1159.662,3202.287h0a1.044,1.044,0,0,1-.764-.333c-.445-.479-10.9-11.8-10.9-18.005a11.662,11.662,0,0,1,23.325,0c0,6.2-10.454,17.526-10.9,18.005A1.044,1.044,0,0,1,1159.662,3202.287Zm0-27.914a9.587,9.587,0,0,0-9.576,9.576c0,4.118,6.328,12.088,9.576,15.743,3.248-3.655,9.576-11.625,9.576-15.743A9.587,9.587,0,0,0,1159.662,3174.373Z"
+                    fill="#e8e9ea"
+                  />
+                </g>
+                <g id="Group_25" data-name="Group 25">
+                  <path
+                    id="Path_41"
+                    data-name="Path 41"
+                    d="M1159.662,3188.69a5.25,5.25,0,1,1,5.251-5.25A5.256,5.256,0,0,1,1159.662,3188.69Zm0-8.415a3.165,3.165,0,1,0,3.165,3.165A3.168,3.168,0,0,0,1159.662,3180.275Z"
+                    fill="#e8e9ea"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            Tinkune, kathmandu, Sirsa Marg
+          </a>
+        </li>
+        <li>
+          <a href="tel:+9770123456">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20.994"
+              height="30"
+              viewBox="0 0 20.994 30"
+            >
+              <g
+                id="Group_28"
+                data-name="Group 28"
+                transform="translate(-1148 -3221.037)"
+              >
                 <path
-                  d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4    l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472    l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"
+                  id="Path_42"
+                  data-name="Path 42"
+                  d="M1164.553,3221.037h-12.112a4.445,4.445,0,0,0-4.441,4.44V3246.6a4.446,4.446,0,0,0,4.441,4.441h12.112a4.446,4.446,0,0,0,4.441-4.441v-21.119A4.446,4.446,0,0,0,1164.553,3221.037Zm-12.112,2.049h12.112a2.394,2.394,0,0,1,2.392,2.391v16.92h-16.9v-16.92A2.394,2.394,0,0,1,1152.441,3223.086Zm12.112,25.9h-12.112a2.4,2.4,0,0,1-2.392-2.392v-2.15h16.9v2.15A2.4,2.4,0,0,1,1164.553,3248.988Z"
+                  fill="#e8e9ea"
+                />
+                <path
+                  id="Path_43"
+                  data-name="Path 43"
+                  d="M1158.217,3226.034a.819.819,0,1,0-.82-.819A.819.819,0,0,0,1158.217,3226.034Z"
+                  fill="#e8e9ea"
+                />
+                <path
+                  id="Path_44"
+                  data-name="Path 44"
+                  d="M1158.217,3245.721a.82.82,0,1,0,.819.819A.82.82,0,0,0,1158.217,3245.721Z"
+                  fill="#e8e9ea"
                 />
               </g>
-            </g>
-          </svg>
-        </button>
-      </div>
-    </form>
+            </svg>
+
+            +977 01 000000
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@nchm.com.np">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="23.567"
+              viewBox="0 0 30 23.567"
+            >
+              <path
+                id="Path_39"
+                data-name="Path 39"
+                d="M1173.669,3128.9h-21.338a4.336,4.336,0,0,0-4.331,4.331v14.905a4.336,4.336,0,0,0,4.331,4.331h21.338a4.336,4.336,0,0,0,4.331-4.331V3133.23A4.336,4.336,0,0,0,1173.669,3128.9Zm0,2.07a2.284,2.284,0,0,1,.514.061l-9,10.215a2.907,2.907,0,0,1-4.362,0l-9-10.215a2.284,2.284,0,0,1,.514-.061Zm2.261,17.166a2.263,2.263,0,0,1-2.261,2.26h-21.338a2.263,2.263,0,0,1-2.261-2.26V3133.23a2.239,2.239,0,0,1,.17-.857l9.026,10.241a4.979,4.979,0,0,0,7.469,0l9.025-10.241a2.242,2.242,0,0,1,.17.857Z"
+                transform="translate(-1148 -3128.899)"
+                fill="#e8e9ea"
+              />
+            </svg>
+            info@nchm.com.np
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -658,6 +705,21 @@
   <div class="flower">
     <div class="title">
       <span>Notice</span>
+      <button class="close__not">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="311pt"
+          viewBox="0 0 311 311.07733"
+          width="311pt"
+        >
+          <path
+            d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"
+          />
+          <path
+            d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"
+          />
+        </svg>
+      </button>
     </div>
     <div class="notice__item">
       <h3>
@@ -764,11 +826,6 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
