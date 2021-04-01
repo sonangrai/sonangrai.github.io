@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Homepage </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon" />
+    <!-- CSS only -->
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+     
+  </head>
+  <body>
+    <header>
+  <div class="top-head">
+    <div class="ad-box"></div>
+    <div class="logo">
+      <div class="mid">
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="212"
+            height="90"
+            viewBox="0 0 212 90"
+          >
+            <text
+              id="सयथरी"
+              transform="translate(1 68)"
+              fill="#707070"
+              font-size="64"
+              font-family="Poppins-Black, Poppins"
+              font-weight="800"
+            >
+              <tspan x="0" y="0">सयथरी</tspan>
+            </text>
+          </svg>
+        </a>
+        <div class="bottom__info">
+          <span id="date"></span>
+          <span id="temp">30°C, Kathmandu</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-box"></div>
+  </div>
+</header>
+
+<div class="lower-head">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="men-flex">
+          <nav class="desk-menu">
+            <ul>
+              <li>
+                <a href="./">स </a>
+              </li>
+              <li><a href="#!">समाचार</a></li>
+              <li><a href="#!">समिक्षा</a></li>
+              <li><a href="#!">गसिप</a></li>
+              <li><a href="#!">अन्तरवार्ता</a></li>
+              <li><a href="#!">साहित्य</a></li>
+              <li><a href="#!">लाईफस्टाइल</a></li>
+              <li><a href="#!">संगित</a></li>
+              <li><a href="#!">टेलिभिजन्</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+                id="ham"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                /></svg
+            ></span>
+          </div>
+          <div class="left-contents">
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="-21 -21 682.66669 682.66669"
+                    >
+                      <path
+                        d="m604.671875 0h-569.375c-19.496094.0117188-35.30078125 15.824219-35.296875 35.328125v569.375c.0117188 19.496094 15.824219 35.300781 35.328125 35.296875h306.546875v-247.5h-83.125v-96.875h83.125v-71.292969c0-82.675781 50.472656-127.675781 124.222656-127.675781 35.324219 0 65.679688 2.632812 74.527344 3.808594v86.410156h-50.855469c-40.125 0-47.894531 19.066406-47.894531 47.050781v61.699219h95.9375l-12.5 96.875h-83.4375v247.5h162.796875c19.507813.003906 35.324219-15.804688 35.328125-35.3125 0-.003906 0-.007812 0-.015625v-569.375c-.007812-19.496094-15.824219-35.30078125-35.328125-35.296875zm0 0"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-102.1875 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"
+                      />
+                      <path
+                        d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-59.113281 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"
+                      />
+                      <path
+                        d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"
+                      />
+                      <path
+                        d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-72.960938 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search">
+              <div class="search__box">
+                <input type="text" />
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 511.999 511.999"
+                    style="enable-background: new 0 0 511.999 511.999"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M225.773,0.616C101.283,0.616,0,101.622,0,225.773s101.284,225.157,225.773,225.157s225.774-101.006,225.774-225.157    S350.263,0.616,225.773,0.616z M225.773,413.917c-104.084,0-188.761-84.406-188.761-188.145    c0-103.745,84.677-188.145,188.761-188.145s188.761,84.4,188.761,188.145C414.535,329.511,329.858,413.917,225.773,413.917z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M506.547,479.756L385.024,358.85c-7.248-7.205-18.963-7.174-26.174,0.068c-7.205,7.248-7.174,18.962,0.068,26.174    l121.523,120.906c3.615,3.59,8.328,5.385,13.053,5.385c4.756,0,9.506-1.82,13.121-5.453    C513.82,498.681,513.789,486.967,506.547,479.756z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-nav">
+  <nav class="mob-menu">
+    <ul>
+      <li><a href="#!">समाचार</a></li>
+      <li><a href="#!">समिक्षा</a></li>
+      <li><a href="#!">गसिप</a></li>
+      <li><a href="#!">अन्तरवार्ता</a></li>
+      <li><a href="#!">साहित्य</a></li>
+      <li><a href="#!">लाईफस्टाइल</a></li>
+      <li><a href="#!">संगित</a></li>
+      <li><a href="#!">टेलिभिजन्</a></li>
+    </ul>
+  </nav>
+  <div class="closer"></div>
+</div>
+
+
+<main class="home-page">
+  <section class="screen layout--1 section--padding">
+    <div class="container">
+      <h2 class="title--section">मुख्य समाचार</h2>
+      <article class="grid--top grid br-t">
+        <a href="#" class="card card--hr">
+          <div class="card__img">
+            <img src="./img/img01.png" alt="" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">कता बस्दा राम्रो</h2>
+            <p class="card__para">
+              म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु।
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="card card--hr">
+          <div class="card__img">
+            <img src="./img/img02.png" alt="" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">कता खाने</h2>
+            <p class="card__para">
+              म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु।
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="card card--hr">
+          <div class="card__img">
+            <img src="./img/img03.png" alt="" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">कता घुम्न जाने</h2>
+            <p class="card__para">
+              म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु।
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="card card--hr">
+          <div class="card__img">
+            <img src="./img/img04.png" alt="" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">के गर्दा राम्रो</h2>
+            <p class="card__para">
+              म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु।
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="grid--bottom grid br-b">
+        <div href="#" class="card card--hr card--lg">
+          <div class="card__body pl-0">
+            <h2 class="card__title--lg">
+              <a href="#"></a>फिल्म दुत नियुक्त गर्न सुझाव
+            </h2>
+            <div class="card__action">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <div class="card__action--aside">
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-eye-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-square-dots-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="card__para">
+              कार्यक्रममा बोल्दै नेपाल फिल्म सोसाइटिका अध्यक्ष तथा चलचित्र विकास
+              बोर्डका पूर्वअध्यक्ष एवं अभिनेता कृष्ण मल्लले नवनियुक्त अध्यक्ष
+              दाहालको कार्यकालमा समग्र फिल्म क्षेत्रको विकास विस्तार एवं
+              पेसाकर्मीको संरक्षण र उत्थानमा महत्वपुर्न पहलकदमीसहित उपलब्धि
+              हुनुपर्नेमा जोड दिए। कोभिड–१९ तथा लकडाउनले थलापरेको उद्योगलाई
+              चलायमान बनाउन, फिल्मकर्मीलाई प्रोत्साहन गर्न र यस संकटको घडीमा
+              ठप्प भएको फिल्म क्षेत्रलाई
+            </p>
+            <a href="#!" class="card__link">पुरा पाठ पढनुस</a>
+          </div>
+          <div class="card__img">
+            <img src="./img/img05.png" alt="" />
+          </div>
+        </div>
+        <div href="#" class="card br-l">
+          <div class="card__img">
+            <img src="./img/img06.png" alt="" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title card__title--md">
+              <a href="#!">मलाई मनपर्ने ठाउँहरु</a>
+            </h2>
+            <div class="card__action">
+              <h2 class="card__title category--title">घुमघाम</h2>
+              <div class="card__action--aside">
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-eye-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                    ></path>
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-square-dots-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="sublink">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="card__para">
+              कार्यक्रममा बोल्दै नेपाल फिल्म सोसाइटिका अध्यक्ष तथा चलचित्र विकास
+              बोर्डका पूर्वअध्यक्ष एवं अभिनेता कृष्ण मल्लले नवनियुक्त अध्यक्ष
+              दाहालको कार्यकालमा समग्र फिल्म क्षेत्रको विकास विस्तार एवं
+              पेसाकर्मीको संरक्षण र उत्थानमा महत्वपुर्न पहलकदमीसहित उपलब्धि
+              हुनुपर्नेमा जोड दिए। कोभिड–१९ तथा लकडाउनले थलापरेको उद्योगलाई
+              चलायमान बनाउन, फिल्मकर्मीलाई प्रोत्साहन गर्न र यस संकटको घडीमा
+              ठप्प भएको फिल्म क्षेत्रलाई
+            </p>
+            <a href="#!" class="card__link">पुरा पाठ पढनुस</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="card--collection">
+    <div class="container">
+      <div class="row">
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img01.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img02.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card ad">
+            <img src="./img/ad01.png" alt="" class="w-100" />
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img01.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img04.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img05.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-6 col-xl-6">
+          <a href="#!" class="card ad">
+            <img src="./img/ad02.png" alt="" class="w-100" />
+          </a>
+        </article>
+      </div>
+      <div class="button-container">
+        <button class="btn btn-load">थप लोड गर्नुहोस</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="samikshya card--collection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="sub-title">
+            <span>समिक्षा</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <article class="central">
+            <a href="#!" class="card">
+              <h2 class="card__title card__title--md">
+                तपाईं नेपाललाई बुद्धको देश भनेर चिनाउन चाहनुहुन्छ या सगरमाथाको
+                देश भनेर चिनाउनुहुन्छ?
+              </h2>
+              <h2 class="card__title category--title">संजय बाराकोटी</h2>
+              <p class="card__para">
+                म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु। किनभने पक्कै पनि
+                गौतम बुद्धभन्दा पहिले सगरमाथाको उत्पत्ति भएको थियो। सगरमाथा भएर
+                नै गौतम बुद्धको जन्म भएको हो कि? प्रकृतिभन्दा माथि कुनै पनि कुरा
+                हुँदैन। यस कारण सगरमाथालाई पहिलो र गौतम बुद्धलाई दोस्रो स्थानमा
+                राखेर हेर्छु।
+              </p>
+              <div class="card__img">
+                <img src="./img/Ellipse 1.png" class="circle-img" alt="" />
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-lg-8">
+          <div class="ad">
+            <img src="./img/Rectangle 27.png" alt="" />
+          </div>
+        </div>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img01.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img02.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card ad">
+            <img src="./img/ad01.png" alt="" class="w-100" />
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img01.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img04.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-4 col-xl-3 br-r">
+          <a href="#!" class="card">
+            <div class="card__img">
+              <img src="./img/img05.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title category--title">सिनेमा</h2>
+              <h2 class="card__title card__title--md">
+                नेपालमा कोरोना संक्रमितको संख्यामा बृद्धी
+              </h2>
+            </div>
+          </a>
+        </article>
+        <article class="col-md-6 col-lg-6 col-xl-6">
+          <a href="#!" class="card ad">
+            <img src="./img/ad02.png" alt="" class="w-100" />
+          </a>
+        </article>
+      </div>
+      <div class="button-container">
+        <button class="btn btn-load">थप लोड गर्नुहोस</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOSSIP -->
+  <section class="gossip section--padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="sub-title">
+            <span>गसिप</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card__img">
+              <img src="./img/gossip1.png" alt="" />
+            </div>
+            <div class="card__body">
+              <h2 class="card__title">ल है इन्टरभ्युदेखि होसियार</h2>
+              <div class="card__action">
+                <h2 class="card__title category--title">घुमघाम</h2>
+                <div class="card__action--aside">
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-eye-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                      ></path>
+                      <path
+                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chat-square-dots-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-share-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="card__para">
+                केही दिनदेखि देखिरहेको छु कलाकारहरूले इन्टरभ्युमा बोलेको कुरा
+                एकपछि अर्को विवादमा आइरहेको छ। कोही राष्ट्रियताका बारेमा
+                चिप्लिरहेका छन्, कोही देशको
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <article class="sidetype">
+            <a href="#!" class="card">
+              <div class="card__img">
+                <img src="./img/img04.png" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title category--title">संगित</h2>
+                <h2 class="card__title card__title--md">
+                  दिपक बज्रचारयको नयाँ गीतले मच्चायो धमाका
+                </h2>
+              </div>
+            </a>
+          </article>
+          <article class="sidetype">
+            <a href="#!" class="card">
+              <div class="card__img">
+                <img src="./img/img01.png" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title category--title">संगित</h2>
+                <h2 class="card__title card__title--md">
+                  दिपक बज्रचारयको नयाँ गीतले मच्चायो धमाका
+                </h2>
+              </div>
+            </a>
+          </article>
+          <article class="sidetype">
+            <a href="#!" class="card">
+              <div class="card__img">
+                <img src="./img/img05.png" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title category--title">संगित</h2>
+                <h2 class="card__title card__title--md">
+                  दिपक बज्रचारयको नयाँ गीतले मच्चायो धमाका
+                </h2>
+              </div>
+            </a>
+          </article>
+          <article class="sidetype">
+            <a href="#!" class="card">
+              <div class="card__img">
+                <img src="./img/img02.png" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title category--title">संगित</h2>
+                <h2 class="card__title card__title--md">
+                  दिपक बज्रचारयको नयाँ गीतले मच्चायो धमाका
+                </h2>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-12 br-t br-b mt-4">
+          <div class="inverse__card">
+            <div class="card__body">
+              <h2 class="card__title category--title">साहित्य स्पेशल</h2>
+              <h2 class="card__title">सुरक्षित भविष्यका लागि विकल्प</h2>
+              <div class="card__action">
+                <div class="card__action--aside">
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-eye-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                      ></path>
+                      <path
+                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chat-square-dots-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="sublink">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-share-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="card__para">
+                म नेपाललाई सगरमाथाको देश भनेर चिनाउन चाहन्छु। किनभने पक्कै पनि
+                गौतम बुद्धभन्दा पहिले सगरमाथाको उत्पत्ति भएको थियो। सगरमाथा भएर
+                नै गौतम बुद्धको जन्म भएको हो कि? प्रकृतिभन्दा माथि कुनै पनि कुरा
+                हुँदैन। यस कारण सगरमाथालाई पहिलो र गौतम बुद्धलाई दोस्रो स्थानमा
+                राखेर हेर्छु।
+              </p>
+              <a href="#!" class="card__link">पुरा पाठ पढनुस</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/swam.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="button-container">
+            <button class="btn btn-load">थप लोड गर्नुहोस</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="gotop">
+          <span id="gotop">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 511.999 511.999"
+                style="enable-background: new 0 0 511.999 511.999"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M506.127,351.331l-207.701-207.27c-23.393-23.394-61.458-23.395-84.838-0.015L5.872,351.33    c-7.818,7.802-7.831,20.465-0.029,28.284c7.802,7.818,20.465,7.832,28.284,0.029l207.731-207.299    c7.798-7.797,20.486-7.798,28.299,0.015l207.716,207.285c3.904,3.896,9.015,5.843,14.127,5.843c5.125,0,10.25-1.958,14.156-5.872    C513.959,371.796,513.945,359.133,506.127,351.331z"
+                    />
+                  </g>
+                </g></svg
+            ></span>
+            माथि जानुहोस</span
+          >
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="34"
+            viewBox="0 0 80 34"
+          >
+            <text
+              id="सयथरी"
+              transform="translate(1 26)"
+              fill="#dedede"
+              font-size="24"
+              font-family="Poppins-Black, Poppins"
+              font-weight="800"
+            >
+              <tspan x="0" y="0">सयथरी</tspan>
+            </text>
+          </svg>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="foot-item">
+          <h3>हामी संग सम्पर्क राख्नुहोस</h3>
+          <ul>
+            <li><a href="#!">हाम्रो बारेमा</a></li>
+            <li><a href="#!">सहयोग</a></li>
+            <li><a href="#!">विज्ञापनको लागि</a></li>
+            <li><a href="#!">सम्पर्क राख्नुहोस</a></li>
+            <li><a href="#!">समाचर सम्प्रेश्ण</a></li>
+            <li><a href="#!">अन्य जानकारी</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="foot-item">
+          <h3>सम्पर्क फर्म</h3>
+          <form action="">
+            <div class="form-item">
+              <input type="text" placeholder="नाम" />
+            </div>
+            <div class="form-item">
+              <input type="email" placeholder="ईमेल ठेगाना" />
+            </div>
+            <div class="form-item">
+              <textarea placeholder="तपाईंको सन्देश"></textarea>
+            </div>
+            <div class="form-item">
+              <button type="submit">पठाउनु होस्</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="foot-item">
+          <h3>सम्पर्क</h3>
+          <h4>सयथरी मिडीया प्रा ली</h4>
+          <div class="infos">
+            <div class="infos__item">बालुवाटार काठमाडौं नेपाल</div>
+            <div class="infos__item"><a href="tel:"> +९७७ ९८१ १२३ ४५६</a></div>
+            <div class="infos__item">
+              <a href="mailto:info@sayathari.online"> info@sayathari.online</a>
+            </div>
+            <div class="infos__item">
+              <a href="mailto:info@sayathari.online"> help@sayathari.online </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="bottom-foot">
+          <div class="bar">
+            <span>&copy 2021</span> <strong>सयथरी</strong> <span>प्रा लि</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
