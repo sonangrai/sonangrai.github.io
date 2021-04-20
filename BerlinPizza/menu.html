@@ -724,6 +724,13 @@
     </div>
   </div>
   <div class="header__right">
+    <div class="mobile-nav">
+      <div id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <div class="user--actions">
       <div class="buttons">
         <button
@@ -786,8 +793,8 @@
               stroke-linejoin="round"
             />
           </svg>
-
           <span>View Order</span>
+          <sup class="count">5</sup>
         </button>
       </div>
     </div>
@@ -1214,7 +1221,7 @@
 >
   <div class="offcanvas-header">
     <div class="section--title--wrapper">
-      <h2 class="section--title white">Add Order</h2>
+      <h2 class="section--title white">Add To Cart</h2>
       <button
         class="title--link btn-close text-reset"
         data-bs-dismiss="offcanvas"
@@ -1226,7 +1233,7 @@
       <img src="./img/menu1.png" alt="" />
     </figure>
     <form class="form" action="#!" method="post">
-      <h2 class="section--title white">Add Order</h2>
+      <h2 class="section--title white">Add to Cart</h2>
       <div class="row gx-3">
         <div class="form-group col-sm-6">
           <select class="form-select">
@@ -1297,6 +1304,37 @@
         <button class="btn btn-secondary">Proceed to Checkout</button>
       </div>
     </form>
+
+    <div class="cart-items">
+      <h2 class="section--title white mb-4">Your Cart Items</h2>
+      <div class="item">
+        <div class="head mb-2">
+          <h3>Mozzarella Pizza</h3>
+          <div class="label">
+            <label class="lbl">18"</label>
+            <label class="lbl">Garlic & Herb</label>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="head mb-2">
+          <h3>Mozzarella Pizza</h3>
+          <div class="label">
+            <label class="lbl">18"</label>
+            <label class="lbl">Garlic & Herb</label>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="head mb-2">
+          <h3>Mozzarella Pizza</h3>
+          <div class="label">
+            <label class="lbl">18"</label>
+            <label class="lbl">Garlic & Herb</label>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- Extra Toppings and Dip  -->
