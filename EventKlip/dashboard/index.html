@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> EventKlip -
+Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon" />
+    <meta name="theme-color" content="#fff" />
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="../css/intlTelInput.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+     
+  </head>
+  <body>
+    <header class="dashboard--header">
+  <div class="header--row">
+    <div class="logo">
+      <!-- Mobile Hamburger -->
+      <div class="mob-nav">
+        <div class="nav-icon" id="dash-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <a href="./"><img src="../img/logo.png" alt="" /></a>
+    </div>
+    <div class="user--actions">
+      <!-- Date Box -->
+      <div class="date--box">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+          >
+            <g
+              id="Group_194"
+              data-name="Group 194"
+              transform="translate(1247 1957)"
+            >
+              <path
+                id="Icon_material-event"
+                data-name="Icon material-event"
+                d="M14.466,9.331H10.907V12.89h3.559ZM13.754,1.5V2.924h-5.7V1.5H6.636V2.924H5.924A1.417,1.417,0,0,0,4.507,4.348L4.5,14.314a1.423,1.423,0,0,0,1.424,1.424H15.89a1.428,1.428,0,0,0,1.424-1.424V4.348A1.428,1.428,0,0,0,15.89,2.924h-.712V1.5ZM15.89,14.314H5.924V6.483H15.89Z"
+                transform="translate(-1243.5 -1951.5)"
+                fill="#6c62fc"
+              />
+              <g
+                id="Rectangle_46"
+                data-name="Rectangle 46"
+                transform="translate(-1247 -1957)"
+                fill="none"
+                stroke="#6c62fc"
+                stroke-width="1"
+              >
+                <rect width="28" height="28" rx="7" stroke="none" />
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="27"
+                  height="27"
+                  rx="6.5"
+                  fill="none"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="date">
+          <div class="lf">
+            <span id="day"></span>
+            <span id="month"></span>
+          </div>
+          <div class="rt">
+            <span id="week"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Notification Dropdown -->
+      <div class="notification">
+        <div class="dropdown">
+          <button
+            class="btn-dropdown"
+            type="button"
+            id="notify"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-bell"></i
+            ><span class="sup badge badge-main">5</span>
+          </button>
+          <div
+            class="notify-dropdown dropdown-menu-end dropdown-menu"
+            aria-labelledby="notify"
+          >
+            <div class="notifications">
+              <div class="notif-item">
+                <div class="img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/27/price-2389232__340.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <div class="title">Your Event was successful</div>
+                  <small
+                    ><i class="bi bi-clock"></i> <span>2</span> Min Ago</small
+                  >
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/27/price-2389232__340.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <div class="title">Your Event was successful</div>
+                  <small
+                    ><i class="bi bi-clock"></i> <span>2</span> Min Ago</small
+                  >
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/27/price-2389232__340.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <div class="title">Your Event was successful</div>
+                  <small
+                    ><i class="bi bi-clock"></i> <span>2</span> Min Ago</small
+                  >
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/27/price-2389232__340.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <div class="title">Your Event was successful</div>
+                  <small
+                    ><i class="bi bi-clock"></i> <span>2</span> Min Ago</small
+                  >
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/27/price-2389232__340.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <div class="title">Your Event was successful</div>
+                  <small
+                    ><i class="bi bi-clock"></i> <span>2</span> Min Ago</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="notify-footer">
+              <a href="#!"><i class="bi bi-arrow-right-circle"></i> See All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Dropdown -->
+      <div class="user--drop">
+        <div class="dropdown">
+          <button
+            class="btn-dropdown ek-drop-toggle"
+            type="button"
+            id="user--actions"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083386_1280.jpg"
+              alt=""
+            />
+            <span>Sophie</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <ul
+            class="user-dropdown dropdown-menu-end dropdown-menu"
+            aria-labelledby="user--actions"
+          >
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-person"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-gear"></i> Settings</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-box-arrow-right"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <aside>
+  <div class="user--info">
+    <img
+      src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083386_1280.jpg"
+      alt=""
+    />
+    <span class="user__name">Sophie Jackson</span>
+  </div>
+  <div class="sidebar--nav">
+    <div class="menu-item active">
+      <a href="./dashboard">
+        <i class="bi bi-house"></i>
+        <span>Dashboard</span>
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="./dashboard">
+        <i class="bi bi-calendar-event"></i>
+        <span>Event</span>
+      </a>
+    </div>
+    <div class="menu-item">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <i class="bi bi-calendar-event"></i>
+              <span>Event</span>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul class="sub-menu">
+                <li><a href="#!">Sub Menu 1</a></li>
+                <li><a href="#!">Sub Menu 2</a></li>
+                <li><a href="#!">Sub Menu 3</a></li>
+                <li><a href="#!">Sub Menu 4</a></li>
+                <li><a href="#!">Sub Menu 5</a></li>
+                <li><a href="#!">Sub Menu 6</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <i class="bi bi-calendar-event"></i>
+              <span>Event</span>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul class="sub-menu">
+                <li><a href="#!">Sub Menu 1</a></li>
+                <li><a href="#!">Sub Menu 2</a></li>
+                <li><a href="#!">Sub Menu 3</a></li>
+                <li><a href="#!">Sub Menu 4</a></li>
+                <li><a href="#!">Sub Menu 5</a></li>
+                <li><a href="#!">Sub Menu 6</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+ 
+<main class="dashboard--main">
+  <!-- BreadCrumb -->
+  <div class="topbar">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- YOur Events -->
+  <section class="contents">
+    <div class="events-row">
+      <div class="card create-event">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+          >
+            <g
+              id="Group_247"
+              data-name="Group 247"
+              transform="translate(1780 1402)"
+            >
+              <circle
+                id="Ellipse_54"
+                data-name="Ellipse 54"
+                cx="14"
+                cy="14"
+                r="14"
+                transform="translate(-1780 -1402)"
+                fill="#6c62fc"
+              />
+              <g
+                id="Icon_ionic-ios-create"
+                data-name="Icon ionic-ios-create"
+                transform="translate(-1772.547 -1394.939)"
+              >
+                <g
+                  id="Group_7"
+                  data-name="Group 7"
+                  transform="translate(5.229)"
+                >
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M15.734,3.995,9.447,10.282a.245.245,0,0,0-.072.174v.825a.246.246,0,0,0,.246.246h.819a.252.252,0,0,0,.177-.072l6.29-6.287a.246.246,0,0,0,0-.349l-.825-.825A.246.246,0,0,0,15.734,3.995Z"
+                    transform="translate(-9.375 -2.812)"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_5"
+                    data-name="Path 5"
+                    d="M21.5,2.841l-.448-.448-.006-.006a.55.55,0,0,0-.358-.137.539.539,0,0,0-.361.14l-.352.355a.126.126,0,0,0,0,.174l.324.324.675.675a.124.124,0,0,0,.177,0l.352-.352a.531.531,0,0,0,.137-.361A.563.563,0,0,0,21.5,2.841Z"
+                    transform="translate(-12.926 -2.25)"
+                    fill="#fff"
+                  />
+                </g>
+                <path
+                  id="Path_6"
+                  data-name="Path 6"
+                  d="M8.285,12.577a.5.5,0,0,1-.352.146H6.645a.5.5,0,0,1-.5-.5V10.934a.5.5,0,0,1,.146-.352l.025-.025,4.594-4.594a.124.124,0,0,0-.087-.212h-7.5A1.828,1.828,0,0,0,1.5,7.579v6.972a1.828,1.828,0,0,0,1.827,1.827H11.3a1.828,1.828,0,0,0,1.827-1.827V8.046a.124.124,0,0,0-.212-.087l-4.6,4.594Z"
+                  transform="translate(-1.5 -3.426)"
+                  fill="#fff"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="desc">
+          <div class="title">
+            <h4>Create an Event</h4>
+          </div>
+          <div class="info">
+            <p>Enter the details and create a wonderful event.</p>
+          </div>
+          <a href="./create" class="btn btn-main">Create</a>
+        </div>
+      </div>
+      <div class="card enter-event">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <g
+              id="Group_157"
+              data-name="Group 157"
+              transform="translate(-187 -715)"
+            >
+              <circle
+                id="Ellipse_54"
+                data-name="Ellipse 54"
+                cx="16"
+                cy="16"
+                r="16"
+                transform="translate(187 715)"
+                fill="#6c62fc"
+              />
+              <path
+                id="Icon_material-event-available"
+                data-name="Icon material-event-available"
+                d="M13.69,8.949l-.838-.838L9,11.967,7.322,10.292l-.838.838L9,13.642ZM15.642,2.58h-.79V1h-1.58V2.58H6.951V1H5.37V2.58H4.58A1.573,1.573,0,0,0,3.008,4.16L3,15.222A1.58,1.58,0,0,0,4.58,16.8H15.642a1.585,1.585,0,0,0,1.58-1.58V4.16A1.585,1.585,0,0,0,15.642,2.58Zm0,12.642H4.58V6.531H15.642Z"
+                transform="translate(192.889 722)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="desc">
+          <div class="title">
+            <h4>Enter an Event</h4>
+          </div>
+          <div class="info">
+            <p>Enter with just a QR Scan Or an access code.</p>
+          </div>
+          <a href="" class="btn btn-main">Enter</a>
+        </div>
+      </div>
+      <div class="card the-event">
+        <a href="./event">
+          <div class="preview-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/09/04/07/40/couple-1643452__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title">
+            <h4>Sam & Sammy Wedding</h4>
+          </div>
+          <div class="date-time">
+            <ul>
+              <li>18 March</li>
+              <li>Wed</li>
+              <li>4 PM</li>
+            </ul>
+          </div></a
+        >
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="../js/dashboard.js"></script>
+  </body>
+</html>
