@@ -330,121 +330,88 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./">Dashboard</a></li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Create an Event
-        </li>
+        <li class="breadcrumb-item active" aria-current="page">Review Event</li>
       </ol>
     </nav>
   </div>
 
   <!-- Event Form -->
-  <div class="start-event">
-    <form action="" method="POST">
-      <div class="cover-img">
-        <div class="preview">
-          <img id="show" src="../img/preview.png" alt="" />
-        </div>
-        <label for="cover"><i class="bi bi-image"></i> Add Cover</label>
-        <input type="file" id="cover" />
+  <div class="start-event review-event">
+    <div class="cover-img">
+      <div class="preview">
+        <img
+          id="show"
+          src="https://cdn.pixabay.com/photo/2015/02/14/02/18/marriage-636018_1280.jpg"
+          alt=""
+        />
       </div>
+    </div>
 
-      <div class="prof-img">
-        <div class="preview">
-          <img id="show2" src="../img/preview-pic.png" alt="" />
-        </div>
-        <label for="profile"><i class="bi bi-image"></i> Add Profile</label>
-        <input type="file" id="profile" />
+    <div class="prof-img">
+      <div class="preview">
+        <img
+          id="show2"
+          src="https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607__340.jpg"
+          alt=""
+        />
       </div>
+    </div>
 
-      <div class="inputs">
-        <div class="form-item">
-          <input type="text" class="form-control" id="event-name" />
-          <label for="event-name">Event Name</label>
-        </div>
-
-        <div class="form-item">
-          <select class="form-control form-select" name="" id="event-type">
-            <option value=""></option>
-            <option value="wedding">Wedding</option>
-            <option value="divorce">Divorce</option>
-            <option value="aniversary">Aniversary</option>
-          </select>
-          <label for="event-type">Event Type</label>
-        </div>
-
-        <div class="form-item form-inline">
-          <div class="from">
-            <input class="form-control" type="date" placeholder="From" />
-          </div>
-          <div class="to">
-            <input class="form-control" type="date" placeholder="To" />
-          </div>
-          <label for="" class="no-trans">Event Date</label>
-        </div>
-
-        <div class="form-item">
-          <select class="form-control form-select" name="" id="age-limit">
-            <option value=""></option>
-            <option value="none">None</option>
-            <option value="13+">13+</option>
-            <option value="16+">16+</option>
-            <option value="18+">18+</option>
-          </select>
-          <label for="age-limit">Age Limit</label>
-        </div>
-
-        <div class="form-item">
-          <input type="text" class="form-control" id="event-location" />
-          <label for="event-location">Event Location</label>
-        </div>
-
-        <div class="form-item">
-          <input type="text" class="form-control" id="contact" />
-          <label for="contact">Contact</label>
-        </div>
-
-        <div class="form-item">
-          <textarea
-            type="text"
-            class="form-control"
-            id="event-description"
-          ></textarea>
-          <label for="event-description">Event Description</label>
-        </div>
-
-        <div class="form-item select-item">
-          <select
-            class="form-control form-select"
-            name=""
-            id="event-attendance"
-          >
-            <option value=""></option>
-            <option value="below 100">below 100</option>
-            <option value="100 to 200">100 to 200</option>
-            <option value="200 to 500">200 to 500</option>
-            <option value="200 to 800">200 to 800</option>
-            <option value="800 to 1000">800 to 1000</option>
-            <option value="1000 to 2000">1000 to 2000</option>
-          </select>
-          <label for="event-attendance">Number of Attendance</label>
-        </div>
-
-        <div class="form-item select-item">
-          <select class="form-control form-select" name="" id="event-limit">
-            <option value=""></option>
-            <option value="200 Clicks">200 Clicks</option>
-            <option value="500 Clicks">500 Clicks</option>
-            <option value="1000 Clicks">1000 Clicks</option>
-            <option value="Unlimited">Unlimited</option>
-          </select>
-          <label for="event-limit">Multimedia Limitsper User</label>
-        </div>
-
-        <div class="next">
-          <a href="./review" type="submit" class="btn btn-main">Next</a>
-        </div>
+    <div class="previews">
+      <div class="title">
+        <h4>Event Details</h4>
       </div>
-    </form>
+      <div class="preview-table">
+        <table>
+          <tbody>
+            <tr>
+              <td>Event Name</td>
+              <td>Sam & Sammy Wedding</td>
+            </tr>
+            <tr>
+              <td>Event Type</td>
+              <td>Wedding</td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td>08-04-2021</td>
+            </tr>
+            <tr>
+              <td>Age Limit</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Wales</td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td>09 000 000</td>
+            </tr>
+            <tr>
+              <td>Event Description</td>
+              <td>
+                <p>A day filled with joy and love dedicated to Sam and Sammy</p>
+              </td>
+            </tr>
+            <tr>
+              <td>No. of Attendances</td>
+              <td>200 to 500</td>
+            </tr>
+            <tr>
+              <td>Multimedia Limit</td>
+              <td>100 Clicks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice">
+        <span>If the info are correct , go ahead and publish</span>
+      </div>
+      <div class="next">
+        <a href="./success" class="btn btn-main">Publish</a>
+      </div>
+    </div>
   </div>
 </main>
 
