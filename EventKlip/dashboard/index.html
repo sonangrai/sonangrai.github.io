@@ -37,6 +37,71 @@ Dashboard </title>
       <a href="./"><img src="../img/logo.png" alt="" /></a>
     </div>
     <div class="user--actions">
+      <!-- Create Event-->
+
+      <div class="date--box create--event">
+        <div class="icon">
+          <a href="./create">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+            >
+              <g
+                id="Group_247"
+                data-name="Group 247"
+                transform="translate(1780 1402)"
+              >
+                <circle
+                  id="Ellipse_54"
+                  data-name="Ellipse 54"
+                  cx="14"
+                  cy="14"
+                  r="14"
+                  transform="translate(-1780 -1402)"
+                  fill="#6c62fc"
+                />
+                <g
+                  id="Icon_ionic-ios-create"
+                  data-name="Icon ionic-ios-create"
+                  transform="translate(-1772.547 -1394.939)"
+                >
+                  <g
+                    id="Group_7"
+                    data-name="Group 7"
+                    transform="translate(5.229)"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M15.734,3.995,9.447,10.282a.245.245,0,0,0-.072.174v.825a.246.246,0,0,0,.246.246h.819a.252.252,0,0,0,.177-.072l6.29-6.287a.246.246,0,0,0,0-.349l-.825-.825A.246.246,0,0,0,15.734,3.995Z"
+                      transform="translate(-9.375 -2.812)"
+                      fill="#fff"
+                    />
+                    <path
+                      id="Path_5"
+                      data-name="Path 5"
+                      d="M21.5,2.841l-.448-.448-.006-.006a.55.55,0,0,0-.358-.137.539.539,0,0,0-.361.14l-.352.355a.126.126,0,0,0,0,.174l.324.324.675.675a.124.124,0,0,0,.177,0l.352-.352a.531.531,0,0,0,.137-.361A.563.563,0,0,0,21.5,2.841Z"
+                      transform="translate(-12.926 -2.25)"
+                      fill="#fff"
+                    />
+                  </g>
+                  <path
+                    id="Path_6"
+                    data-name="Path 6"
+                    d="M8.285,12.577a.5.5,0,0,1-.352.146H6.645a.5.5,0,0,1-.5-.5V10.934a.5.5,0,0,1,.146-.352l.025-.025,4.594-4.594a.124.124,0,0,0-.087-.212h-7.5A1.828,1.828,0,0,0,1.5,7.579v6.972a1.828,1.828,0,0,0,1.827,1.827H11.3a1.828,1.828,0,0,0,1.827-1.827V8.046a.124.124,0,0,0-.212-.087l-4.6,4.594Z"
+                    transform="translate(-1.5 -3.426)"
+                    fill="#fff"
+                  />
+                </g>
+              </g></svg
+          ></a>
+        </div>
+        <div class="date">
+          <a href="./create">Create Event</a>
+        </div>
+      </div>
       <!-- Date Box -->
       <div class="date--box">
         <div class="icon">
@@ -244,9 +309,9 @@ Dashboard </title>
       </a>
     </div>
     <div class="menu-item">
-      <a href="./dashboard">
+      <a href="./create">
         <i class="bi bi-calendar-event"></i>
-        <span>Event</span>
+        <span>Create an Event</span>
       </a>
     </div>
     <div class="menu-item">
@@ -336,117 +401,44 @@ Dashboard </title>
 
   <!-- YOur Events -->
   <section class="contents">
+    <!--Counters-->
+    <div class="counters">
+      <div class="count-row">
+        <div class="card count-card">
+          <div class="title">
+            <h3>Total Events</h3>
+          </div>
+          <div class="count">
+            <span>1400</span>
+          </div>
+        </div>
+        <div class="card count-card">
+          <div class="title">
+            <h3>Events Completed</h3>
+          </div>
+          <div class="count">
+            <span>845</span>
+          </div>
+        </div>
+        <div class="card count-card">
+          <div class="title">
+            <h3>Events Running</h3>
+          </div>
+          <div class="count">
+            <span>540</span>
+          </div>
+        </div>
+        <div class="card count-card">
+          <div class="title">
+            <h3>Canceled Events</h3>
+          </div>
+          <div class="count">
+            <span>50</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="events-row">
-      <div class="card create-event">
-        <div class="icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-          >
-            <g
-              id="Group_247"
-              data-name="Group 247"
-              transform="translate(1780 1402)"
-            >
-              <circle
-                id="Ellipse_54"
-                data-name="Ellipse 54"
-                cx="14"
-                cy="14"
-                r="14"
-                transform="translate(-1780 -1402)"
-                fill="#6c62fc"
-              />
-              <g
-                id="Icon_ionic-ios-create"
-                data-name="Icon ionic-ios-create"
-                transform="translate(-1772.547 -1394.939)"
-              >
-                <g
-                  id="Group_7"
-                  data-name="Group 7"
-                  transform="translate(5.229)"
-                >
-                  <path
-                    id="Path_4"
-                    data-name="Path 4"
-                    d="M15.734,3.995,9.447,10.282a.245.245,0,0,0-.072.174v.825a.246.246,0,0,0,.246.246h.819a.252.252,0,0,0,.177-.072l6.29-6.287a.246.246,0,0,0,0-.349l-.825-.825A.246.246,0,0,0,15.734,3.995Z"
-                    transform="translate(-9.375 -2.812)"
-                    fill="#fff"
-                  />
-                  <path
-                    id="Path_5"
-                    data-name="Path 5"
-                    d="M21.5,2.841l-.448-.448-.006-.006a.55.55,0,0,0-.358-.137.539.539,0,0,0-.361.14l-.352.355a.126.126,0,0,0,0,.174l.324.324.675.675a.124.124,0,0,0,.177,0l.352-.352a.531.531,0,0,0,.137-.361A.563.563,0,0,0,21.5,2.841Z"
-                    transform="translate(-12.926 -2.25)"
-                    fill="#fff"
-                  />
-                </g>
-                <path
-                  id="Path_6"
-                  data-name="Path 6"
-                  d="M8.285,12.577a.5.5,0,0,1-.352.146H6.645a.5.5,0,0,1-.5-.5V10.934a.5.5,0,0,1,.146-.352l.025-.025,4.594-4.594a.124.124,0,0,0-.087-.212h-7.5A1.828,1.828,0,0,0,1.5,7.579v6.972a1.828,1.828,0,0,0,1.827,1.827H11.3a1.828,1.828,0,0,0,1.827-1.827V8.046a.124.124,0,0,0-.212-.087l-4.6,4.594Z"
-                  transform="translate(-1.5 -3.426)"
-                  fill="#fff"
-                />
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="desc">
-          <div class="title">
-            <h4>Create an Event</h4>
-          </div>
-          <div class="info">
-            <p>Enter the details and create a wonderful event.</p>
-          </div>
-          <a href="./create" class="btn btn-main">Create</a>
-        </div>
-      </div>
-      <div class="card enter-event">
-        <div class="icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-          >
-            <g
-              id="Group_157"
-              data-name="Group 157"
-              transform="translate(-187 -715)"
-            >
-              <circle
-                id="Ellipse_54"
-                data-name="Ellipse 54"
-                cx="16"
-                cy="16"
-                r="16"
-                transform="translate(187 715)"
-                fill="#6c62fc"
-              />
-              <path
-                id="Icon_material-event-available"
-                data-name="Icon material-event-available"
-                d="M13.69,8.949l-.838-.838L9,11.967,7.322,10.292l-.838.838L9,13.642ZM15.642,2.58h-.79V1h-1.58V2.58H6.951V1H5.37V2.58H4.58A1.573,1.573,0,0,0,3.008,4.16L3,15.222A1.58,1.58,0,0,0,4.58,16.8H15.642a1.585,1.585,0,0,0,1.58-1.58V4.16A1.585,1.585,0,0,0,15.642,2.58Zm0,12.642H4.58V6.531H15.642Z"
-                transform="translate(192.889 722)"
-                fill="#fff"
-              />
-            </g>
-          </svg>
-        </div>
-        <div class="desc">
-          <div class="title">
-            <h4>Enter an Event</h4>
-          </div>
-          <div class="info">
-            <p>Enter with just a QR Scan Or an access code.</p>
-          </div>
-          <a href="" class="btn btn-main">Enter</a>
-        </div>
-      </div>
       <div class="card the-event">
         <a href="./event">
           <div class="preview-img">
