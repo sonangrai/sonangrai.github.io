@@ -29,12 +29,62 @@ Wedding - EventKlip </title>
       <!-- Mobile Hamburger -->
       <div class="mob-nav">
         <div class="nav-icon" id="dash-nav">
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="bi bi-list op"></i><i class="bi bi-x-lg co"></i>
         </div>
       </div>
       <a href="./"><img src="../img/logo.png" alt="" /></a>
+      <!-- Date Box -->
+      <div class="date--box">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+          >
+            <g
+              id="Group_194"
+              data-name="Group 194"
+              transform="translate(1247 1957)"
+            >
+              <path
+                id="Icon_material-event"
+                data-name="Icon material-event"
+                d="M14.466,9.331H10.907V12.89h3.559ZM13.754,1.5V2.924h-5.7V1.5H6.636V2.924H5.924A1.417,1.417,0,0,0,4.507,4.348L4.5,14.314a1.423,1.423,0,0,0,1.424,1.424H15.89a1.428,1.428,0,0,0,1.424-1.424V4.348A1.428,1.428,0,0,0,15.89,2.924h-.712V1.5ZM15.89,14.314H5.924V6.483H15.89Z"
+                transform="translate(-1243.5 -1951.5)"
+                fill="#6c62fc"
+              />
+              <g
+                id="Rectangle_46"
+                data-name="Rectangle 46"
+                transform="translate(-1247 -1957)"
+                fill="none"
+                stroke="#6c62fc"
+                stroke-width="1"
+              >
+                <rect width="28" height="28" rx="7" stroke="none" />
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="27"
+                  height="27"
+                  rx="6.5"
+                  fill="none"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="date">
+          <div class="lf">
+            <span id="day"></span>
+            <span id="month"></span>
+          </div>
+          <div class="rt">
+            <span id="week"></span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="user--actions">
       <!-- Create Event-->
@@ -100,58 +150,6 @@ Wedding - EventKlip </title>
         </div>
         <div class="date">
           <a href="./create">Create Event</a>
-        </div>
-      </div>
-      <!-- Date Box -->
-      <div class="date--box">
-        <div class="icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-          >
-            <g
-              id="Group_194"
-              data-name="Group 194"
-              transform="translate(1247 1957)"
-            >
-              <path
-                id="Icon_material-event"
-                data-name="Icon material-event"
-                d="M14.466,9.331H10.907V12.89h3.559ZM13.754,1.5V2.924h-5.7V1.5H6.636V2.924H5.924A1.417,1.417,0,0,0,4.507,4.348L4.5,14.314a1.423,1.423,0,0,0,1.424,1.424H15.89a1.428,1.428,0,0,0,1.424-1.424V4.348A1.428,1.428,0,0,0,15.89,2.924h-.712V1.5ZM15.89,14.314H5.924V6.483H15.89Z"
-                transform="translate(-1243.5 -1951.5)"
-                fill="#6c62fc"
-              />
-              <g
-                id="Rectangle_46"
-                data-name="Rectangle 46"
-                transform="translate(-1247 -1957)"
-                fill="none"
-                stroke="#6c62fc"
-                stroke-width="1"
-              >
-                <rect width="28" height="28" rx="7" stroke="none" />
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="27"
-                  height="27"
-                  rx="6.5"
-                  fill="none"
-                />
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="date">
-          <div class="lf">
-            <span id="day"></span>
-            <span id="month"></span>
-          </div>
-          <div class="rt">
-            <span id="week"></span>
-          </div>
         </div>
       </div>
       <!-- Notification Dropdown -->
@@ -413,6 +411,100 @@ Wedding - EventKlip </title>
           />
         </div>
 
+        <div class="event-meta">
+          <div class="topper">
+            <div class="code">
+              <span>Event Access Code</span>
+              <span class="the-code"
+                ><input type="text" value="Sam2021E" readonly
+              /></span>
+            </div>
+            <div
+              class="copy-code"
+              onclick="copyClipboard()"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Copy Code"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.401"
+                  height="15.517"
+                  viewBox="0 0 13.401 15.517"
+                >
+                  <path
+                    id="Icon_material-content-copy"
+                    data-name="Icon material-content-copy"
+                    d="M11.874,1H3.411A1.415,1.415,0,0,0,2,2.411v9.874H3.411V2.411h8.464ZM13.99,3.821H6.232A1.415,1.415,0,0,0,4.821,5.232v9.874a1.415,1.415,0,0,0,1.411,1.411H13.99A1.415,1.415,0,0,0,15.4,15.106V5.232A1.415,1.415,0,0,0,13.99,3.821Zm0,11.285H6.232V5.232H13.99Z"
+                    transform="translate(-2 -1)"
+                    fill="#333"
+                    opacity="0.5"
+                  />
+                </svg>
+              </span>
+              <span class="copied">Copy</span>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="title">
+              <h3>Event QR Code</h3>
+            </div>
+            <div class="actions">
+              <div class="qr">
+                <img src="../img/qr.png" alt="" />
+              </div>
+              <div class="download">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11.997"
+                    height="14.567"
+                    viewBox="0 0 11.997 14.567"
+                  >
+                    <path
+                      id="Icon_metro-file-download"
+                      data-name="Icon metro-file-download"
+                      d="M17.995,9.426H14.567V4.285H9.426V9.426H6l6,6ZM6,17.138v1.714h12V17.138H6Z"
+                      transform="translate(-5.998 -4.285)"
+                      fill="#333"
+                      opacity="0.5"
+                    />
+                  </svg>
+                </span>
+                <span><a href="../img/qr.png" download=""> Download </a></span>
+              </div>
+              <div class="share">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18.004"
+                    height="14.999"
+                    viewBox="0 0 18.004 14.999"
+                  >
+                    <path
+                      id="Icon_ionic-ios-share-alt"
+                      data-name="Icon ionic-ios-share-alt"
+                      d="M20.845,10.8,14.231,4.613a.338.338,0,0,0-.262-.113c-.206.009-.469.155-.469.375v3.1a.2.2,0,0,1-.169.192C6.755,9.178,3.984,14.1,3,19.209c-.037.2.234.389.361.23A11.954,11.954,0,0,1,13.3,14.4a.232.232,0,0,1,.2.225v3.047a.4.4,0,0,0,.68.248l6.661-6.3A.518.518,0,0,0,21,11.236.628.628,0,0,0,20.845,10.8Z"
+                      transform="translate(-3.001 -4.5)"
+                      fill="#333"
+                      opacity="0.5"
+                    />
+                  </svg>
+                </span>
+                <span>Share</span>
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                This QR Code takes to a landing page which includes EventKlip
+                Download button and your Event’s Access Code.
+                <strong>Do not forget to download it.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="the-descriptions">
           <p>Hello <strong>Username</strong></p>
           <p>
@@ -519,6 +611,24 @@ Wedding - EventKlip </title>
     </div>
   </section>
 </main>
+
+<script>
+  //Copy to clipboard
+  function copyClipboard() {
+    /* Get the text field */
+    var copyText = document.querySelector(".the-code input");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Change copy */
+    document.querySelector(".copied").innerHTML = "Copied";
+  }
+</script>
 
 
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
