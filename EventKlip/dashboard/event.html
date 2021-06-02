@@ -402,107 +402,166 @@ Wedding - EventKlip </title>
 
   <!-- Event Detail -->
   <section class="contents single-content">
+    <div class="hero-image">
+      <img src="../img/prev1.jpg" alt="" />
+      <div class="prof">
+        <img
+          src="https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607__340.jpg"
+          alt=""
+        />
+      </div>
+    </div>
     <div class="event-row">
       <div class="event-info">
-        <div class="hero-image">
-          <img src="../img/prev1.jpg" alt="" />
+        <div class="event-name">
+          <h2>Sam & Sammy Wedding</h2>
         </div>
-
-        <div class="event-meta">
-          <div class="topper">
-            <div class="code">
-              <span>Event Access Code</span>
-              <span class="the-code"
-                ><input type="text" value="Sam2021E" readonly
-              /></span>
-            </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                View Event Actions
+              </button>
+            </h2>
             <div
-              class="copy-code"
-              onclick="copyClipboard()"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Copy Code"
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
             >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13.401"
-                  height="15.517"
-                  viewBox="0 0 13.401 15.517"
-                >
-                  <path
-                    id="Icon_material-content-copy"
-                    data-name="Icon material-content-copy"
-                    d="M11.874,1H3.411A1.415,1.415,0,0,0,2,2.411v9.874H3.411V2.411h8.464ZM13.99,3.821H6.232A1.415,1.415,0,0,0,4.821,5.232v9.874a1.415,1.415,0,0,0,1.411,1.411H13.99A1.415,1.415,0,0,0,15.4,15.106V5.232A1.415,1.415,0,0,0,13.99,3.821Zm0,11.285H6.232V5.232H13.99Z"
-                    transform="translate(-2 -1)"
-                    fill="#333"
-                    opacity="0.5"
-                  />
-                </svg>
-              </span>
-              <span class="copied">Copy</span>
+              <div class="accordion-body">
+                <div class="event-meta">
+                  <div class="topper">
+                    <div class="code">
+                      <span>Event Access Code</span>
+                      <span class="the-code"
+                        ><input type="text" value="Sam2021E" readonly
+                      /></span>
+                    </div>
+                    <div
+                      class="copy-code"
+                      onclick="copyClipboard()"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Copy Code"
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.401"
+                          height="15.517"
+                          viewBox="0 0 13.401 15.517"
+                        >
+                          <path
+                            id="Icon_material-content-copy"
+                            data-name="Icon material-content-copy"
+                            d="M11.874,1H3.411A1.415,1.415,0,0,0,2,2.411v9.874H3.411V2.411h8.464ZM13.99,3.821H6.232A1.415,1.415,0,0,0,4.821,5.232v9.874a1.415,1.415,0,0,0,1.411,1.411H13.99A1.415,1.415,0,0,0,15.4,15.106V5.232A1.415,1.415,0,0,0,13.99,3.821Zm0,11.285H6.232V5.232H13.99Z"
+                            transform="translate(-2 -1)"
+                            fill="#333"
+                            opacity="0.5"
+                          />
+                        </svg>
+                      </span>
+                      <span class="copied">Copy</span>
+                    </div>
+                  </div>
+                  <div class="lower">
+                    <div class="title">
+                      <h3>Event QR Code</h3>
+                    </div>
+                    <div class="actions">
+                      <div class="qr">
+                        <img src="../img/qr.png" alt="" />
+                      </div>
+                      <div class="download">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.997"
+                            height="14.567"
+                            viewBox="0 0 11.997 14.567"
+                          >
+                            <path
+                              id="Icon_metro-file-download"
+                              data-name="Icon metro-file-download"
+                              d="M17.995,9.426H14.567V4.285H9.426V9.426H6l6,6ZM6,17.138v1.714h12V17.138H6Z"
+                              transform="translate(-5.998 -4.285)"
+                              fill="#333"
+                              opacity="0.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          ><a href="../img/qr.png" download="">
+                            Download
+                          </a></span
+                        >
+                      </div>
+                      <div class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18.004"
+                            height="14.999"
+                            viewBox="0 0 18.004 14.999"
+                          >
+                            <path
+                              id="Icon_ionic-ios-share-alt"
+                              data-name="Icon ionic-ios-share-alt"
+                              d="M20.845,10.8,14.231,4.613a.338.338,0,0,0-.262-.113c-.206.009-.469.155-.469.375v3.1a.2.2,0,0,1-.169.192C6.755,9.178,3.984,14.1,3,19.209c-.037.2.234.389.361.23A11.954,11.954,0,0,1,13.3,14.4a.232.232,0,0,1,.2.225v3.047a.4.4,0,0,0,.68.248l6.661-6.3A.518.518,0,0,0,21,11.236.628.628,0,0,0,20.845,10.8Z"
+                              transform="translate(-3.001 -4.5)"
+                              fill="#333"
+                              opacity="0.5"
+                            />
+                          </svg>
+                        </span>
+                        <span>Share</span>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p>
+                        This QR Code takes to a landing page which includes
+                        EventKlip Download button and your Event’s Access Code.
+                        <strong>Do not forget to download it.</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cons">
+                  <a href="./gallery" class="btn btn-main"
+                    ><i class="bi bi-images"></i> Gallery</a
+                  >
+                  <a href="#" class="btn btn-main">Enter</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="lower">
-            <div class="title">
-              <h3>Event QR Code</h3>
-            </div>
-            <div class="actions">
-              <div class="qr">
-                <img src="../img/qr.png" alt="" />
-              </div>
-              <div class="download">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11.997"
-                    height="14.567"
-                    viewBox="0 0 11.997 14.567"
-                  >
-                    <path
-                      id="Icon_metro-file-download"
-                      data-name="Icon metro-file-download"
-                      d="M17.995,9.426H14.567V4.285H9.426V9.426H6l6,6ZM6,17.138v1.714h12V17.138H6Z"
-                      transform="translate(-5.998 -4.285)"
-                      fill="#333"
-                      opacity="0.5"
-                    />
-                  </svg>
-                </span>
-                <span><a href="../img/qr.png" download=""> Download </a></span>
-              </div>
-              <div class="share">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18.004"
-                    height="14.999"
-                    viewBox="0 0 18.004 14.999"
-                  >
-                    <path
-                      id="Icon_ionic-ios-share-alt"
-                      data-name="Icon ionic-ios-share-alt"
-                      d="M20.845,10.8,14.231,4.613a.338.338,0,0,0-.262-.113c-.206.009-.469.155-.469.375v3.1a.2.2,0,0,1-.169.192C6.755,9.178,3.984,14.1,3,19.209c-.037.2.234.389.361.23A11.954,11.954,0,0,1,13.3,14.4a.232.232,0,0,1,.2.225v3.047a.4.4,0,0,0,.68.248l6.661-6.3A.518.518,0,0,0,21,11.236.628.628,0,0,0,20.845,10.8Z"
-                      transform="translate(-3.001 -4.5)"
-                      fill="#333"
-                      opacity="0.5"
-                    />
-                  </svg>
-                </span>
-                <span>Share</span>
-              </div>
-            </div>
-            <div class="info">
-              <p>
-                This QR Code takes to a landing page which includes EventKlip
-                Download button and your Event’s Access Code.
-                <strong>Do not forget to download it.</strong>
-              </p>
-            </div>
+        </div>
+
+        <div class="the-gallery">
+          <div class="title">
+            <span>Some Event Clips</span>
+            <span> <a href="./gallery"> All Images</a></span>
+          </div>
+          <div class="gal-row">
+            <img src="../img/prev1.jpg" alt="" />
+            <img src="../img/prev1.jpg" alt="" />
+            <img src="../img/prev1.jpg" alt="" />
+            <img src="../img/prev1.jpg" alt="" />
           </div>
         </div>
 
         <div class="the-descriptions">
+          <div class="title">
+            <span>Event Description</span>
+          </div>
           <p>Hello <strong>Username</strong></p>
           <p>
             Welcome to Sam’s & Sammy’s Wedding. Enjoy the event. Start clicking
@@ -588,22 +647,6 @@ Wedding - EventKlip </title>
           </p>
           <p>Enjoy!</p>
         </div>
-      </div>
-
-      <div class="event-actions">
-        <div class="title">
-          <h4>Event By</h4>
-        </div>
-        <div class="prev">
-          <img
-            src="https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607__340.jpg"
-            alt=""
-          />
-        </div>
-        <a href="./gallery" class="btn btn-main"
-          ><i class="bi bi-images"></i> Gallery</a
-        >
-        <a href="#" class="btn btn-main">Enter</a>
       </div>
     </div>
   </section>
