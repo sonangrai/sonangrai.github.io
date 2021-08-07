@@ -7,6 +7,9 @@ body{
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
     background: #10afc8;
+    background-image: url(https://cdn.pixabay.com/photo/2018/07/26/15/49/digital-art-3563931_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     width: 90%;
@@ -14,8 +17,10 @@ body{
 }
 .tbl {
     box-shadow: 0 0 8px -5px #000;
-    background-color: #fff;
+    background-color: #ffffffa6;
     padding: 1em;
+    overflow-y: scroll;
+    height: 80vh;
 }
 
 /* width */
@@ -43,7 +48,6 @@ body{
 div#table_id_wrapper {
     display: flex;
     flex-wrap: wrap;
-    overflow-y: scroll;
 }
 div#table_id_length {
     width: 50%;
